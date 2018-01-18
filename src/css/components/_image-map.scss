@@ -1,0 +1,20 @@
+/*==============================================================
+# Image Map
+==============================================================*/
+
+.image-wrapper {
+    position: relative;
+    max-width: 768px;
+    margin: 0 auto;
+    img {
+        width: 100%;
+        height: auto;
+    }
+    a {
+        background: red;
+        opacity: .4;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}

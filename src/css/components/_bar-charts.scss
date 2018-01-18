@@ -1,0 +1,108 @@
+/*==============================================================
+# Range Charts
+==============================================================*/
+
+/*body {
+	min-height: 300vh;
+	.section {
+		margin: 30vh 0;
+	}
+}*/
+
+.bar-chart-component {
+	width: 65%;
+	float: left;
+}
+.bar-label {
+	width: 115px;
+	text-align: right;
+	display: inline-block;
+	vertical-align: middle;
+}
+.bar {
+	position: relative;
+	display: inline-block;
+	background: $grayLight;
+	width: calc(100% - 120px);
+	margin: 10px 0;
+	vertical-align: middle;
+	.cost {
+		content: attr(data-chart-cost);
+		position: absolute;
+		top: 50%;
+		padding: 0 10px;
+		transform: translate3d(0, -50%, 0);
+		left: 0;
+		transition: 1s $cbTrans all;
+	}
+	svg {
+		width: 100%; 
+		height: 60px;
+		display: block;
+		margin: 0 auto;
+	}
+	rect {
+		transition: 1s $cbTrans all;
+	}
+	&.green-scheme {
+		rect {
+			fill: $green;
+		}
+		.cost {
+			color: $green;
+		}
+	}
+	&.light-green-scheme {
+		rect {
+			fill: lighten($green, 10%);
+		}
+		.cost {
+			color: lighten($green, 10%);
+		}
+	}
+	&.red-scheme {
+		rect {
+			fill: $red;
+		}
+		.cost {
+			color: $red;
+		}
+	}
+	&.orange-scheme {
+		rect {
+			fill: $orange;
+		}
+		.cost {
+			color: $orange;
+		}
+	}
+	&.light-orange-scheme {
+		rect {
+			fill: lighten($orange, 10%);
+		}
+		.cost {
+			color: lighten($orange, 10%);
+		}
+	}
+	&.dark-orange-scheme {
+		rect {
+			fill: darken($orange, 10%);
+		}
+		.cost {
+			color: darken($orange, 10%);
+		}
+	}
+	/*&:after {
+		position: absolute;
+		height: 80px;
+		width: 80px;
+		background: $white;
+		content: "";
+		display: block;
+		border-radius: 100%;
+		top: 50%;
+		left: 50%;
+		z-index: 5;
+		transform: translate(-50%, -50%);
+	}*/
+}
