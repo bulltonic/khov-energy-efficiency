@@ -5,6 +5,7 @@ Based off of [Project Build w/ Gulp.js](https://github.com/bulltonic/html-sass-g
 1. HTML5
 2. Sass
 3. jQuery
+4. PHP (See #9 of Project Utilities for details)
 
 ## Project Utilities (Optional)
 1. [Bootstrap Framework (Grid Only)](https://getbootstrap.com/docs/4.0/layout/grid/): A free and open-source front-end web framework for building responsive, mobile-first websites and web applications.
@@ -15,6 +16,7 @@ Based off of [Project Build w/ Gulp.js](https://github.com/bulltonic/html-sass-g
 6. [SVG for Everybody](https://jonathantneal.github.io/svg4everybody/): SVG for Everybody adds external spritemaps support to otherwise SVG-capable browsers.
 7. [Covervid](http://stefanerickson.github.io/covervid/): Make your HTML5 video behave like a background cover image with this lightweight Javascript plugin / jQuery extension 
 8. [Video.js](http://videojs.com/): Video.js is an open source library for working with video on the web, also known as an HTML video player
+9. [Gulp Connect PHP](https://github.com/sindresorhus/grunt-php): This is being used to organize files with includes for a more manageable coding experience. If this isn't enjoyed, simply take the contents of each file included, paste it in place of the include lines and changed the index files to have a .html extension
 
 ### Working with [Gulp.js](https://gulpjs.com/)
 1. Dependencies [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/get-npm)

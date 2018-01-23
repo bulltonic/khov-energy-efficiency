@@ -1,0 +1,64 @@
+/*==============================================================
+# Legends
+==============================================================*/
+
+.legend-component {
+	&.features-legend {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		z-index: 1;
+		color: $white;
+		@include breakFirst(wide) {
+			right: auto;
+			left: 20px;
+		}
+	}
+	&.glossary-legend {
+		text-align: center;
+	}
+	.legend-item {
+		display: inline-block;
+		padding: 5px 10px;
+		span {
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.icon {
+			padding: 10px;
+			border: 3px solid $white;
+			border-radius: 100%;
+			&.orange-scheme {
+		        background: $orange;
+		    }
+		    &.green-scheme {
+		        background: $green;
+		    }
+		    &.dark-orange-scheme {
+		        background: $darkOrange;
+		    }
+		    &.magenta-scheme {
+		        background: $magenta;
+		    }
+		    &.blue-scheme {
+		        background: $blue;
+		    }
+		    &.teal-scheme {
+		        background: $teal;
+		    }
+		    &.green-scheme {
+		        background: $green;
+		    }
+		    &.purple-scheme {
+		        background: $purple;
+		    }
+		}
+		.legend-text {
+			&:before {
+				content: ":";
+				display: inline-block;
+				margin: 0 5px 0 0;
+			}
+		}
+	}
+}

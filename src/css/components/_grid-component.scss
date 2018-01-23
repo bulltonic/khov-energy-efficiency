@@ -1,0 +1,140 @@
+/*==============================================================
+# Grid Component
+==============================================================*/
+
+.grid-row-wrapper {
+	float: left;
+	width: 100%;
+	@include breakFirst(medium) {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.grid-column {
+		float: left;
+		padding: 0px 10px 5px;
+		padding: calc(0px); 
+		@include breakFirst(medium) {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			justify-content: space-between;
+		}
+		&.column-1 {
+			width: 100%;
+			.grid-item {
+				padding-bottom: 69%;
+			}
+		}
+		@include breakFirst(medium) {
+			&.column-1 {
+				width: 33.3333%;
+				width: calc(32%);
+				.grid-item {
+					padding-bottom: 69%;
+				}
+			}
+			&.column-md-2 {
+				width: 66.6666%;
+				width: calc(66%);
+				flex-direction: row;
+				.grid-item {
+					padding-bottom: 33.456%;
+					width: 33.3333%;
+					width: calc(48.5%);
+				}
+			}
+		}
+		@include breakFirst(large) {
+			&.column-lg-1 {
+				width: 33.3333%;
+				width: calc(32%);
+				flex-direction: column;
+				.grid-item {
+					padding-bottom: 69%;
+					width: 100%;
+				}
+			}
+			&.column-lg-2 {
+				width: 66.6666%;
+				width: calc(66%);
+				.grid-item {
+					padding-bottom: 70%;
+				}
+			}
+		}
+		.grid-item {
+			width: 100%;
+			overflow: hidden;
+			position: relative;
+			height: 0;
+			margin-bottom: 15px;
+			margin-bottom: calc(20px);
+			.grid-item-background {
+				@include background-cover(center, center);
+				@include fill-parent(-4);
+			}
+			.grid-item-content {
+				position: absolute;
+				left: 15px;
+				bottom: 15px;
+				color: $white;
+				h3, h4 {
+					font-weight: normal;
+					margin-bottom: 10px;
+					display: block;
+				}
+				h3 {
+					font-size: 16px;
+					@include breakFirst(large) {
+						font-size: 24px;
+					}
+				}
+				h4 {
+					font-size: 16px;
+				}
+				sup {
+					vertical-align: super;
+    				font-size: smaller;
+				}
+				.tag {
+					display: inline-block;
+					color: $white;
+					padding: 5px 10px;
+					border-radius: 3px;
+					font-size: 12px;
+					text-transform: uppercase;
+					margin: 2px;
+					&:first-of-type {
+						margin: 2px 2px 2px 0;
+					}
+				    &.orange-scheme {
+				        background: $orange;
+				    }
+				    &.green-scheme {
+				        background: $green;
+				    }
+				    &.dark-orange-scheme {
+				        background: $darkOrange;
+				    }
+				    &.magenta-scheme {
+				        background: $magenta;
+				    }
+				    &.blue-scheme {
+				        background: $blue;
+				    }
+				    &.teal-scheme {
+				        background: $teal;
+				    }
+				    &.green-scheme {
+				        background: $green;
+				    }
+				    &.purple-scheme {
+				        background: $purple;
+				    }
+				}
+
+			}
+		}
+	}
+}

@@ -11,11 +11,22 @@
     'base/_typography',
     'base/_helpers';
 
-// 3. Components
+// 3. Sections
+@import
+    'sections/_main',
+    'sections/_features',
+    'sections/_rating';
+
+// 4. Components
 @import
     'components/_header',
     'components/_footer',
+    'components/_navigation',
+    'components/_tooltips',
+    'components/_icons',
+    'components/_legends',
     'components/_image-map',
-    'components/_range-charts',
-    'components/_range-slider',
-    'components/_bar-charts';
+    'components/_rating-component',
+    'components/_grid-component',
+    'components/_charts',
+    'components/_carousel';

@@ -75,13 +75,27 @@
 	transform: rotate($deg);
 }
 
+// Full size of parent
+// --------------------------------------------------
+
+@mixin fill-parent($z) {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: $z;
+}
+
 // Background Size Cover
 // --------------------------------------------------
 
-@mixin bdg-cover {
+@mixin background-cover($x, $y) {
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: $x $y;
 }
 
 // Backface Visibility

@@ -1,0 +1,72 @@
+/*==============================================================
+# Navigation
+==============================================================*/
+
+.navigation {
+	top: 0;
+    left: -234px;
+    z-index: 501;
+    height: 100%;
+    width: 234px;
+    position: fixed;
+    background-color: $gray;
+    transition: .3s all ease;
+    @include breakFirst(wide) {
+    	left: 0;
+    }
+    &.open {
+        left: 0;
+    }
+    a {
+		display: block;
+		font-size: 12px;
+		padding: 10px 30px;
+		color: $white;
+		text-decoration: none;
+		text-transform: uppercase;
+		transition: .3s all ease;
+		&.current-nav {
+			background: $teal;
+		}
+    }
+    .logo-container {
+        margin: 40px 0 30px;
+        text-align: center;
+        padding: 0 30px;
+        a {
+            padding: 0;
+        }
+    }
+    .back-to-khov {
+        color: $white;
+        border: 1px solid $white;
+        font-weight: 600;
+        font-size: 12px;
+        letter-spacing: .5px;
+        line-height: 20px;
+        text-transform: uppercase;
+        border-radius: 3px;
+        display: inline-block;
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
+        margin: 60px 0 25px 25px;
+        padding: 5px 15px;
+        max-width: 185px;
+    }
+    .menu-button {
+        background: rgba(35, 35, 35, 0.5);
+        position: absolute;
+        left: 234px;
+        top: 0;
+        cursor: pointer;
+        padding: 8px;
+        img {
+            min-width: 25px;
+            float: left;
+        }
+        @include breakFirst(wide) {
+            display: none;
+        }
+    }
+}

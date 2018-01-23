@@ -1,0 +1,148 @@
+/*==============================================================
+# Charts
+==============================================================*/
+
+/*--------------------------------------------------------------
+# Pie Chart
+--------------------------------------------------------------*/
+
+.pie-chart {
+   position: relative;
+   display: inline-block;
+   svg {
+      width: 150px; 
+      height: 150px;
+      transform: rotate(-90deg);
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto;
+   }
+   circle {
+      fill: gray;
+      stroke: $black;
+      stroke-width: 16;
+      transition: 1s $cbTrans all;
+   }
+   &.green-scheme {
+      circle {
+         stroke: $green;
+      }
+   }
+   &.red-scheme {
+      circle {
+         stroke: $red;
+      }
+   }
+   &.orange-scheme {
+      circle {
+         stroke: $orange;
+      }
+   }
+   &:after {
+      position: absolute;
+      height: 80px;
+      width: 80px;
+      background: $white;
+      content: "";
+      display: block;
+      border-radius: 100%;
+      top: 50%;
+      left: 50%;
+      z-index: 5;
+      transform: translate(-50%, -50%);
+   }
+}
+
+.bar-chart {
+  position: relative;
+  display: inline-block;
+  background: $grayLight;
+  width: 100%;
+  margin: 10px 0;
+  vertical-align: middle;
+  svg {
+    width: 100%; 
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+  }
+  rect {
+    transition: 1s $cbTrans all;
+  }
+  &.green-scheme {
+    rect {
+      fill: $green;
+    }
+    .bar-value-text {
+      color: $green;
+    }
+  }
+  &.light-green-scheme {
+    rect {
+      fill: lighten($green, 10%);
+    }
+    .bar-value-text {
+      color: lighten($green, 10%);
+    }
+  }
+  &.red-scheme {
+    rect {
+      fill: $red;
+    }
+    .bar-value-text {
+      color: $red;
+    }
+  }
+  &.orange-scheme {
+    rect {
+      fill: $orange;
+    }
+    .bar-value-text {
+      color: $orange;
+    }
+  }
+  &.light-orange-scheme {
+    rect {
+      fill: lighten($orange, 10%);
+    }
+    .bar-value-text {
+      color: lighten($orange, 10%);
+    }
+  }
+  &.dark-orange-scheme {
+    rect {
+      fill: darken($orange, 10%);
+    }
+    .bar-value-text {
+      color: darken($orange, 10%);
+    }
+  }
+  .bar-value-text {
+    content: attr(data-chart-cost);
+    position: absolute;
+    top: 50%;
+    padding: 0 10px;
+    transform: translate3d(0, -50%, 0);
+    left: 0;
+    transition: 1s $cbTrans all;
+  }
+}
+.chart-footer {
+  text-transform: uppercase;
+  padding: 10px 5px;
+  p {
+    margin: 0;
+    vertical-align: middle;
+    line-height: 20px;
+    font-size: 14px;
+  }
+  &:hover {
+    .tool-tip {
+      &:before,
+      &:after {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}

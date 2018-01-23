@@ -1,5 +1,11 @@
 var gulp = require('gulp'),
+    php = require('gulp-connect-php'),
     plugins = require('gulp-load-plugins')();
+
+// Node server
+gulp.task('php', function() {
+    php.server({ base: '.', hostname: 'localhost', port: 8010, keepalive: true});
+});
 
 // SVG Sprites
 gulp.task('svg-sprite', function() {
@@ -55,10 +61,6 @@ gulp.task('scripts-lib', function() {
     .pipe(gulp.dest('./js/lib'));
 });
 
-
-// Default Tasks
-gulp.task('default', ['scripts', 'scripts-lib', 'scripts-plugin', 'styles', 'svg-sprite',]);
-
 // Watch tasks
 gulp.task('watch', function() {
 
@@ -78,3 +80,8 @@ gulp.task('watch', function() {
   gulp.watch('src/svg/**/*.svg', ['svg-sprite']);
   
 });
+
+// Default Tasks
+gulp.task('default', ['php', 'scripts', 'scripts-lib', 'scripts-plugin', 'styles', 'svg-sprite', 'watch']);
+
+

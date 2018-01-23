@@ -1,0 +1,46 @@
+/*==============================================================
+# Icons
+==============================================================*/
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    &.feature-icon {
+        width: 60px;
+        height: 60px;
+        padding: 5px;
+        border: 3px solid $white;
+        border-radius: 100%;
+    }
+    svg {
+        float: left;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        fill: $white;
+    }
+    &.orange-scheme {
+        background: $orange;
+    }
+    &.green-scheme {
+        background: $green;
+    }
+    &.dark-orange-scheme {
+        background: $darkOrange;
+    }
+    &.magenta-scheme {
+        background: $magenta;
+    }
+    &.blue-scheme {
+        background: $blue;
+    }
+    &.teal-scheme {
+        background: $teal;
+    }
+    &.green-scheme {
+        background: $green;
+    }
+    &.purple-scheme {
+        background: $purple;
+    }
+}

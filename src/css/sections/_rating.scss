@@ -1,0 +1,19 @@
+/*==============================================================
+# Rating Section
+==============================================================*/
+
+.rating-section {
+	position: relative;
+	background-image: url('../img/backgrounds/rating-section-background.jpg');
+	@include background-cover(center, center);
+	/*.section-background {
+		@include background-cover(center, center);
+		@include fill-parent(-4);
+		background-image: url('../img/backgrounds/rating-section-background.jpg');
+		&:before {
+			@include fill-parent(-2);
+			background-color: teal;
+			opacity: .7;
+		}
+	}*/
+}
