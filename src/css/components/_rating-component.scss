@@ -270,7 +270,7 @@ input[type="range"]:focus + .range-slider .range-slider-handle {
 	position: absolute;
 	transform: translate(-50%, 5%);
 	background: white;
-	border: 1px solid $grayLight;
+	border: 1px solid $grayMed;
 	padding: 20px;
 	transition: .3s $cbTrans all;
 	&:after {
@@ -289,7 +289,7 @@ input[type="range"]:focus + .range-slider .range-slider-handle {
 			border-top: 30px solid $white;
 			border-right: 30px solid $white;
 			border-bottom: 0px solid $white;
-			box-shadow: -1px -1px 0 0px $grayLight;
+			box-shadow: -1px -1px 0 0px $grayMed;
 			top: -15px;
 			left: 50%;
 			transform: translateX(-50%) rotate(45deg);
@@ -307,7 +307,7 @@ input[type="range"]:focus + .range-slider .range-slider-handle {
 			border-top: 0px solid $white;
 			border-left: 30px solid $white;
 			border-bottom: 30px solid transparent;
-			box-shadow: -1px -1px 0 0px $grayLight;
+			box-shadow: -1px -1px 0 0px $grayMed;
 			position: absolute;
 			left: -15px;
 			top: 50%;
@@ -341,7 +341,7 @@ input[type="range"]:focus + .range-slider .range-slider-handle {
 	.header-details {
 		float: left;
 		width: 100%;
-		background: $grayLight;
+		background: $grayMed;
 		padding: 10px;
 		margin: 0 0 20px;
 		.detail-item {
@@ -349,7 +349,7 @@ input[type="range"]:focus + .range-slider .range-slider-handle {
 			float: left;
 			width: 50%;
 			background: $white;
-			border-right: 1px solid $grayLight;
+			border-right: 1px solid $grayMed;
 			&:last-child {
 				border-right: none;
 			}

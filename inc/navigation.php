@@ -16,12 +16,13 @@
 
 	<ul>
 		
-		<li><a href="#home">Energy Efficient Home</a></li>
-		<li><a href="#interior-features">Interior Features</a></li>
-		<li><a href="#exterior-features">Exterior Features</a></li>
-		<li><a href="#media-gallery">Media Gallery</a></li>
-		<li><a href="#energy-calculator">Energy Calculator</a></li>
-		<li><a href="#features-glossary">Features Glossary</a></li>
+		<li><a href="#home" class="jump-link">Energy Efficient Home</a></li>
+		<li><a href="#interior-features" class="jump-link">Interior Features</a></li>
+		<li><a href="#exterior-features" class="jump-link">Exterior Features</a></li>
+		<li><a href="#media-gallery" class="jump-link">Media Gallery</a></li>
+		<li><a href="#energy-calculator" class="jump-link">Energy Calculator</a></li>
+		<li><a href="#comparisons" class="jump-link">Dare To Compare</a></li>
+		<li><a href="#features-glossary" class="jump-link">Features Glossary</a></li>
 		
 	</ul>
 

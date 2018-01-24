@@ -221,7 +221,7 @@
 
 										<div class="chart-footer"><!-- BEGIN .chart-footer -->
 
-											<p>"Watch Out" Color <i class="tool-tip" data-tool-tip="Tool tip content!">i</i></p>
+											<p>"Watch Out" Color <i class="tool-tip" data-tool-tip="Comfort pertains to the lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper placerat. Donec ullamcorper placerat.">i</i></p>
 
 										</div><!-- END .chart-footer -->
 

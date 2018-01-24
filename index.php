@@ -15,7 +15,7 @@
 
 	<?php include 'inc/navigation.php'; ?>
 
-	<div class="main-container"><!-- BEGIN .main-container -->
+	<div id="main" class="main-container"><!-- BEGIN .main-container -->
 
 		<div class="header"><!-- BEGIN .header -->
 
@@ -38,6 +38,8 @@
 		<?php include 'inc/media-gallery.php'; ?>
 
 		<?php include 'inc/energy-rating.php'; ?>
+
+		<?php include 'inc/comparisons.php'; ?>
 
 		<?php include 'inc/features-glossary.php'; ?>
 

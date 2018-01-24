@@ -68,11 +68,13 @@ em,
 i {
 	font-style: italic;
 }
-
 strong  {
 	font-weight: bold;
 }
-
+sup {
+	vertical-align: super;
+    font-size: 65%;
+}
 blockquote {
 	margin: 0 1.5em;
 	font-style: italic; 

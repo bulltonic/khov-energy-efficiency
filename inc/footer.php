@@ -1,3 +1,17 @@
+<div class="section bottom-to-top-section">
+	
+	<a href="#main" class="button gray-color jump-link">
+
+		Back To Top
+
+		<svg>
+            <use xlink:href="#icon-ui-caret-up" />
+        </svg> 
+
+	</a>
+
+</div>
+
 <div class="section footer fullWidthWrapper" id="page-footer">
 
 	<div class="threeCol">

@@ -7,16 +7,14 @@ body.open {
 .section {
 	float: left;
 	width: 100%;
-	&.toggle-section {
+	opacity: 1;
+	visibility: visible;
+	height: auto;
+	&.disabled-section {
 		opacity: 0;
 		visibility: hidden;
 		height: 0;
 		transition: .3s all ease;
-		&.active-section {
-			opacity: 1;
-			visibility: visible;
-			height: auto;
-		}
 	}
 }
 .toggle-section {
@@ -70,7 +68,7 @@ body.open {
 		}
 	}
 }
-.content-component {
+.introduction-component {
 	text-align: center;
 	padding: 25px 0;
 	h2, h3 {

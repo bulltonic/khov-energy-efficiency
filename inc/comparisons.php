@@ -1,4 +1,4 @@
-<div class="section rating-section"><!-- BEGIN .rating-section -->
+<div id="comparisons" class="section comparisons-section"><!-- BEGIN .comparisons-section -->
 
 	<div class="container"><!-- BEGIN .container -->
 
@@ -6,275 +6,372 @@
 
 			<div class="col-sm-12"><!-- BEGIN .col-sm-12 -->
 
-				<div class="component rating-component horizontal-orientation"><!-- BEGIN .rating-component -->
+				<div class="component introduction-component">
 
-					<div class="plot-container range-plot-container"><!-- BEGIN .plot-container -->
+					<h2>BUY A NEW K. HOVNANIAN<sup>&reg;</sup> HOME AND START SAVING</h2>
 
-						<ul>
+				</div>
 
-							<li><span>10</span></li>
-							<li><span>20</span></li>
-							<li><span>30</span></li>
-							<li><span>40</span></li>
-							<li><span>50</span></li>
+			</div>
 
-							<li class="details detail-group detail-group-bottom">
-								<span>60</span>
-							</li>
+		</div>
 
-							<li class="details detail-group detail-group-top" data-detail-content="Typical new home from K. Hovnanian">
-								<span>70</span>
-							</li>
+		<div class="row"><!-- BEGIN .row -->
 
-							<li><span>80</span></li>
-							<li><span>90</span></li>
+			<div class="col-sm-6"><!-- BEGIN .col-sm-12 -->
 
-							<li class="details" data-detail-content="Typical home built between 2006 & 2010">
-								<span>100</span>
-							</li>
+				<h4>Date To Compare</h4>
 
-							<li><span>110</span></li>
-							<li><span>120</span></li>
+			</div>
 
-							<li class="details" data-detail-content="Typical used home">
-								<span>130</span>
-							</li>
+		</div>
+		
+		<div class="row"><!-- BEGIN .row -->
 
-							<li><span>140</span></li>
+			<div class="col-sm-6"><!-- BEGIN .col-sm-12 -->
 
-						</ul>
+				<div class="component bar-chart-component tabs-component">
 
-					</div><!-- END .plot-container -->
+					<div class="tab-panel">
 
-					<div class="input-container range-input-container"><!-- BEGIN .input-container -->
+						<div class="panel-label">
 
-						<div class="input-wrapper range-input-wrapper"><!-- BEGIN .input-wrapper -->
+							<h5>West Coast</h5>
 
-							<input type="range" min="0" max="150" step="1" value="70" data-orientation="horizontal" data-range-slider>
-							<output></output>
- 
- 						</div><!-- END .input-wrapper -->
+						</div>
 
- 						<div class="content-wrapper range-content-wrapper"><!-- BEGIN .content-wrapper -->
+						<div class="panel-content">
 
-  						<div class="content-block range-content-block" data-value-min="20" data-value-max="45"><!-- BEGIN .content-block -->
+							<div class="panel-content-container">
+		                        
+			                    <div class="bar-wrapper">
 
-   							<div class="block-header"><!-- BEGIN .block-header -->
+			                    	<div class="bar-label">20 Year Old Home</div>
+			                        
+			                        <div class="bar-chart red-scheme" data-chart-value="78"><!-- BEGIN .bar-chart -->
 
-									<div class="header-title"><!-- BEGIN .header-title -->
-	 
-											<h3><span class="value value-rating">70</span> HERS RATING</h3>
+										<span class="bar-value-text">$1,030</span>
 
-									</div>
+									</div><!-- END .bar-chart -->
 
-									<div class="header-details"><!-- BEGIN .header-details -->
-	 
-								 		<h4>Annual Energy Savings</h4>
+			                    </div>
 
-								 		<div class="detail-item value-detail new-home-detail"><!-- BEGIN .detail-item -->
+			                    <div class="bar-wrapper">
 
-								  		<span class="value value-amount">$0</span>
+			                    	<div class="bar-label">10 Year Old Home</div>
+			                        
+			                        <div class="bar-chart dark-orange-scheme" data-chart-value="65"><!-- BEGIN .bar-chart -->
 
-								  		<span class="value value-label">For a newly built home</span>
+										<span class="bar-value-text">$920</span>
 
-								 		</div>
+									</div><!-- END .bar-chart -->
 
-										<div class="detail-item value-detail old-home-detail"><!-- BEGIN .detail-item -->
+			                    </div>
 
-											<span class="value value-amount">$0</span>
+			                    <div class="bar-wrapper">
 
-											<span class="value value-label">For a older home</span>
+		                    		<div class="bar-label">Home Built to 2006 IECC</div>
+			                        
+			                       	<div class="bar-chart orange-scheme" data-chart-value="60"><!-- BEGIN .bar-chart -->
 
-										</div>
-	
-									</div>
-	
-   							</div>
-   
-   							<div class="block-body"><!-- BEGIN .block-body -->
-	
-									<p>This container has a minimum of <strong>20</strong> and maximum of <strong>45</strong>. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ea eius tempore, iure eligendi sunt hic. Enim animi minima illum cumque impedit officia molestiae sequi, quos excepturi assumenda, error cupiditate.</p>
+										<span class="bar-value-text">$689</span>
 
-   							</div>
+									</div><!-- END .bar-chart -->
 
-   							<div class="block-footer"><!-- BEGIN .block-footer -->
-	
-									<div class="charts-wrapper"><!-- BEGIN .charts-wrapper -->
-	  
-										<div class="chart-content"><!-- BEGIN .chart-content -->
+			                    </div>
 
-											<div class="chart-body"><!-- BEGIN .chart-body -->
+			                    <div class="bar-wrapper">
 
-												<div class="bar-chart orange-scheme" data-chart-value="36"><!-- BEGIN .bar-chart -->
+			                    	<div class="bar-label">Home Built to 2009 IECC</div>
+			                        
+			                        <div class="bar-chart yellow-green-scheme" data-chart-value="30"><!-- BEGIN .bar-chart -->
 
-													<span class="bar-value-text">$1,030</span>
+										<span class="bar-value-text">$130</span>
 
-												</div><!-- END .bar-chart -->
+									</div><!-- END .bar-chart -->
 
-											</div><!-- END .chart-body -->
+			                    </div>
 
-											<div class="chart-footer"><!-- BEGIN .chart-footer -->
+			                    <div class="bar-wrapper">
+			                        
+			                        <div class="bar-label">K. Hovnanian Home</div>
 
-												<p>"Watch Out" Color <i class="tool-tip" data-tool-tip="Tool tip content!">i</i></p>
+			                        <div class="bar-chart green-scheme" data-chart-value="1"><!-- BEGIN .bar-chart -->
 
-											</div><!-- END .chart-footer -->
+										<span class="bar-value-text">$0</span>
 
-										</div><!-- END .chart-content -->
+									</div><!-- END .bar-chart -->
 
-										<div class="chart-content"><!-- BEGIN .chart-content -->
+			                    </div>
 
-											<div class="chart-body"><!-- BEGIN .chart-body -->
+			                </div>
 
-												<div class="bar-chart green-scheme" data-chart-value="22"><!-- BEGIN .bar-chart -->
+		                </div>
 
-													<span class="bar-value-text">$586</span>
+		            </div>
 
-												</div><!-- END .bar-chart -->
+		            <div class="tab-panel">
 
-											</div><!-- END .chart-body -->
+						<div class="panel-label">
 
-											<div class="chart-footer"><!-- BEGIN .chart-footer -->
+							<h5>East Coast</h5>
 
-												<p>Green Color <i class="tool-tip" data-tool-tip="Tool tip content!">i</i></p>
+						</div>
 
-											</div><!-- END .chart-footer -->
+						<div class="panel-content">
 
-										</div><!-- END .chart-content -->
+							<div class="panel-content-container">
+		                        
+			                    <div class="bar-wrapper">
 
-										<div class="chart-content"><!-- BEGIN .chart-content -->
+			                    	<div class="bar-label">A home With Things</div>
+			                        
+			                        <div class="bar-chart red-scheme" data-chart-value="35"><!-- BEGIN .bar-chart -->
 
-											<div class="chart-body"><!-- BEGIN .chart-body -->
+										<span class="bar-value-text">$485</span>
 
-												<div class="bar-chart red-scheme" data-chart-value="81"><!-- BEGIN .bar-chart -->
+									</div><!-- END .bar-chart -->
 
-													<span class="bar-value-text">$13,030</span>
+			                    </div>
 
-												</div><!-- END .bar-chart -->
+			                    <div class="bar-wrapper">
 
-											</div><!-- END .chart-body -->
+			                    	<div class="bar-label">Super Old Year Old Home</div>
+			                        
+			                        <div class="bar-chart dark-orange-scheme" data-chart-value="42"><!-- BEGIN .bar-chart -->
 
-											<div class="chart-footer"><!-- BEGIN .chart-footer -->
+										<span class="bar-value-text">$520</span>
 
-												<p>Red Color <i class="tool-tip" data-tool-tip="Tool tip content!">i</i></p>
+									</div><!-- END .bar-chart -->
 
-											</div><!-- END .chart-footer -->
+			                    </div>
 
-										</div><!-- END .chart-content -->
+			                    <div class="bar-wrapper">
 
-									</div><!-- END .charts-wrapper -->
+		                    		<div class="bar-label">Home Built to 2006 IECC</div>
+			                        
+			                       	<div class="bar-chart orange-scheme" data-chart-value="80"><!-- BEGIN .bar-chart -->
 
-   							</div><!-- END .block-footer -->
+										<span class="bar-value-text">$1589</span>
 
-							</div><!-- END .content-block -->
+									</div><!-- END .bar-chart -->
 
-							<div class="content-block range-content-block" data-value-min="50" data-value-max="80"><!-- BEGIN .content-block -->
-   
-								<div class="block-header"><!-- BEGIN .block-header -->
+			                    </div>
 
-									<div class="header-title"><!-- BEGIN .header-title -->
-	 
-	 									<h3><span class="value value-rating">70</span> HERS RATING</h3>
+			                    <div class="bar-wrapper">
 
-									</div><!-- END .header-title -->
+			                    	<div class="bar-label">Home Built to 2009 IECC</div>
+			                        
+			                        <div class="bar-chart yellow-green-scheme" data-chart-value="10"><!-- BEGIN .bar-chart -->
 
-									<div class="header-details"><!-- BEGIN .header-details -->
-	 
-	 									<h4>Annual Energy Savings</h4>
+										<span class="bar-value-text">$130</span>
 
-	 									<div class="detail-item value-detail new-home-detail"><!-- BEGIN .detail-item -->
+									</div><!-- END .bar-chart -->
 
-											<span class="value value-amount">$0</span>
+			                    </div>
 
-	  									<span class="value value-label">For a newly built home</span>
+			                    <div class="bar-wrapper">
+			                        
+			                        <div class="bar-label">K. Hovnanian Home</div>
 
-	 									</div><!-- END .detail-item -->
+			                        <div class="bar-chart green-scheme" data-chart-value="40"><!-- BEGIN .bar-chart -->
 
-										<div class="detail-item value-detail old-home-detail"><!-- BEGIN .detail-item -->
+										<span class="bar-value-text">$269</span>
 
-											<span class="value value-amount">$0</span>
+									</div><!-- END .bar-chart -->
 
-											<span class="value value-label">For a older home</span>
+			                    </div>
 
-										</div><!-- END .detail-item -->
-	
-									</div><!-- END .header-details -->
-	
-								</div><!-- END .block-header -->
-   
-								<div class="block-body"><!-- BEGIN .block-body -->
+			                </div>
 
-									<p>This container has a minimum of <strong>20</strong> and maximum of <strong>45</strong>. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ea eius tempore, iure eligendi sunt hic. Enim animi minima illum cumque impedit officia molestiae sequi, quos excepturi assumenda, error cupiditate.</p>
+		                </div>
 
-								</div><!-- END .block-body -->
+		            </div>
 
-								<div class="block-footer"><!-- BEGIN .block-footer -->
+		            <div class="tab-panel">
 
-									<div class="charts-wrapper multi-column-charts"><!-- BEGIN .charts-wrapper -->
+						<div class="panel-label">
 
-										<div class="chart-content"><!-- BEGIN .chart-conent -->
+							<h5>West Coast</h5>
 
-											<div class="chart-body"><!-- BEGIN .chart-body -->
+						</div>
 
-												<div class="pie-chart orange-scheme" data-chart-value="36"></div>
+						<div class="panel-content">
 
-											</div><!-- END .chart-body -->
+							<div class="panel-content-container">
+		                        
+			                    <div class="bar-wrapper">
 
-											<div class="chart-footer"><!-- BEGIN .chart-footer -->
+			                    	<div class="bar-label">20 Year Old Home</div>
+			                        
+			                        <div class="bar-chart red-scheme" data-chart-value="78"><!-- BEGIN .bar-chart -->
 
-												<p>"Watch Out" Color <i class="tool-tip" data-tool-tip="Tool tip content!">i</i></p>
+										<span class="bar-value-text">$1,030</span>
 
-											</div><!-- END .chart-footer -->
+									</div><!-- END .bar-chart -->
 
-										</div><!-- END .chart-content -->
+			                    </div>
 
-										<div class="chart-content"><!-- BEGIN .chart-conent -->
+			                    <div class="bar-wrapper">
 
-											<div class="chart-body"><!-- BEGIN .chart-body -->
+			                    	<div class="bar-label">10 Year Old Home</div>
+			                        
+			                        <div class="bar-chart dark-orange-scheme" data-chart-value="65"><!-- BEGIN .bar-chart -->
 
-												<div class="pie-chart green-scheme" data-chart-value="12"></div>
+										<span class="bar-value-text">$920</span>
 
-											</div><!-- END .chart-body -->
+									</div><!-- END .bar-chart -->
 
-											<div class="chart-footer"><!-- BEGIN .chart-footer -->
+			                    </div>
 
-												<p>Green Color <i class="tool-tip" data-tool-tip="Tool tip content!">i</i></p>
+			                    <div class="bar-wrapper">
 
-											</div><!-- END .chart-footer -->
+		                    		<div class="bar-label">Home Built to 2006 IECC</div>
+			                        
+			                       	<div class="bar-chart orange-scheme" data-chart-value="60"><!-- BEGIN .bar-chart -->
 
-										</div><!-- END .chart-content -->
+										<span class="bar-value-text">$689</span>
 
-										<div class="chart-content"><!-- BEGIN .chart-conent -->
+									</div><!-- END .bar-chart -->
 
-											<div class="chart-body"><!-- BEGIN .chart-body -->
+			                    </div>
 
-												<div class="pie-chart red-scheme" data-chart-value="95"></div>
+			                    <div class="bar-wrapper">
 
-											</div><!-- END .chart-body -->
+			                    	<div class="bar-label">Home Built to 2009 IECC</div>
+			                        
+			                        <div class="bar-chart yellow-green-scheme" data-chart-value="30"><!-- BEGIN .bar-chart -->
 
-											<div class="chart-footer"><!-- BEGIN .chart-footer -->
+										<span class="bar-value-text">$130</span>
 
-												<p>Red Color <i class="tool-tip" data-tool-tip="Tool tip content!">i</i></p>
+									</div><!-- END .bar-chart -->
 
-											</div><!-- END .chart-footer -->
+			                    </div>
 
-	 									</div><!-- END .chart-content -->
+			                    <div class="bar-wrapper">
+			                        
+			                        <div class="bar-label">K. Hovnanian Home</div>
 
-									</div><!-- BEGIN .charts-wrapper -->
+			                        <div class="bar-chart green-scheme" data-chart-value="1"><!-- BEGIN .bar-chart -->
 
-   							</div><!-- END .block-footer -->
+										<span class="bar-value-text">$0</span>
 
-							</div><!-- END .content-block -->  
+									</div><!-- END .bar-chart -->
 
- 						</div><!-- END .content-wrapper -->
- 
-					</div><!-- END .input-container -->
+			                    </div>
 
-				</div><!-- END .rating-component -->
+			                </div>
+
+		                </div>
+
+		            </div>
+
+		            <div class="tab-panel">
+
+						<div class="panel-label">
+
+							<h5>West Coast</h5>
+
+						</div>
+
+						<div class="panel-content">
+
+							<div class="panel-content-container">
+		                        
+			                    <div class="bar-wrapper">
+
+			                    	<div class="bar-label">20 Year Old Home</div>
+			                        
+			                        <div class="bar-chart red-scheme" data-chart-value="78"><!-- BEGIN .bar-chart -->
+
+										<span class="bar-value-text">$1,030</span>
+
+									</div><!-- END .bar-chart -->
+
+			                    </div>
+
+			                    <div class="bar-wrapper">
+
+			                    	<div class="bar-label">10 Year Old Home</div>
+			                        
+			                        <div class="bar-chart dark-orange-scheme" data-chart-value="65"><!-- BEGIN .bar-chart -->
+
+										<span class="bar-value-text">$920</span>
+
+									</div><!-- END .bar-chart -->
+
+			                    </div>
+
+			                    <div class="bar-wrapper">
+
+		                    		<div class="bar-label">Home Built to 2006 IECC</div>
+			                        
+			                       	<div class="bar-chart orange-scheme" data-chart-value="60"><!-- BEGIN .bar-chart -->
+
+										<span class="bar-value-text">$689</span>
+
+									</div><!-- END .bar-chart -->
+
+			                    </div>
+
+			                    <div class="bar-wrapper">
+
+			                    	<div class="bar-label">Home Built to 2009 IECC</div>
+			                        
+			                        <div class="bar-chart yellow-green-scheme" data-chart-value="30"><!-- BEGIN .bar-chart -->
+
+										<span class="bar-value-text">$130</span>
+
+									</div><!-- END .bar-chart -->
+
+			                    </div>
+
+			                    <div class="bar-wrapper">
+			                        
+			                        <div class="bar-label">K. Hovnanian Home</div>
+
+			                        <div class="bar-chart green-scheme" data-chart-value="1"><!-- BEGIN .bar-chart -->
+
+										<span class="bar-value-text">$0</span>
+
+									</div><!-- END .bar-chart -->
+
+			                    </div>
+
+			                </div>
+
+		                </div>
+
+		            </div>
+
+	                <div class="tab-list">
+	                	
+	                	<a href="#" class="button tab">West Coast</a>
+	                	<a href="#" class="button tab">East Coast</a>
+	                	<a href="#" class="button tab">North</a>
+	                	<a href="#" class="button tab">South</a>
+
+	                </div>
+
+                </div>
 
 			</div><!-- END .col-sm-12 -->
+
+			<div class="col-sm-6">
+				
+				<div class="component content-component">
+					
+					<h4>Save money & conserve our natural resources without ever sacrificing your family’s comfort.</h4>
+
+					<p>K. Hovnanian® homes are designed to add another level of comfort for your family and energy savings that help you provide for them now and in the years ahead.</p>
+					
+					<p>Innovative, efficient features are seamlessly woven into every home we build. We’ve chosen the latest technology and building practices to create a healthy, comfortable living environment and constant energy savings.</p>
+
+				</div>
+			</div>
 
 		</div><!-- END .row -->
 
 	</div><!-- END .container -->
 
-</div><!-- END .rating-section -->
+</div><!-- END .comparisons-section -->

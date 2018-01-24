@@ -14,14 +14,18 @@
 // 3. Sections
 @import
     'sections/_main',
+    'sections/_header',
+    'sections/_footer',
+    'sections/_navigation',
     'sections/_features',
-    'sections/_rating';
+    'sections/_rating',
+    'sections/_media-gallery',
+    'sections/_comparisons';
 
 // 4. Components
 @import
-    'components/_header',
-    'components/_footer',
-    'components/_navigation',
+    'components/_buttons',
+    'components/_tabs',
     'components/_tooltips',
     'components/_icons',
     'components/_legends',

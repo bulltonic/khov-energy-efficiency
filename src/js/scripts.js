@@ -7,6 +7,22 @@ $(document).ready(function(){
 	$('body').removeClass('loading');
 
 	// ==============================================================*/
+	// Create node and insert SVG file after the body
+	// ==============================================================*/
+
+	// Remove local file and uncomment below once on the dev server
+	// https://css-tricks.com/ajaxing-svg-sprite/ for reference
+
+	$.get("./img/spritemap.svg", function(data) {
+	  var div = document.createElement("div");
+	  div.style.display = 'none';
+	  div.innerHTML = new XMLSerializer().serializeToString(data.documentElement);
+	  document.body.insertBefore(div, document.body.childNodes[0]);
+
+
+	});
+
+	// ==============================================================*/
 	// Menu visibility
 	// ==============================================================*/
 
@@ -261,70 +277,10 @@ $(document).ready(function(){
 		svg.append(rectangle);
 		$this.append(svg);
 		
-		setTimeout(function(){ 
-			rectangle.setAttribute("width", value+'%' );
-			valueText.css({'left': value+'%'});
-		}, 100);
-
-	});
-
-	// ==============================================================*/
-	// Chart animation when scrolled to via scrollmonitor.js
-	// ==============================================================*/
-
-	var watchers = $('.bar').map(function(i, element) {
-
-		var watcher = scrollMonitor.create( element );
-
-		watcher.lock();
-
-		if (watcher.isInViewport) {
-
-			$('.bar').each(function() {
-
-				$this = $(this);
-				var value = $this.data('chart-value');
-				var cost = $this.find('.cost');
-				var rectangle = $this.find('svg rect');
-				setTimeout(function(){
-					rectangle.attr({'width': value+'%'});
-					cost.css({'left': value+'%'});
-				}, 250);
-			});
-						
-		} else if (watcher.isBelowViewport) {
-
-			watcher.fullyEnterViewport(function() {
-
-				$('.bar').each(function() {
-					$this = $(this);
-					var value = $this.data('chart-value');
-					var cost = $this.find('.cost');
-					var rectangle = $this.find('svg rect');
-					setTimeout(function(){
-						rectangle.attr({'width': value+'%'});
-						cost.css({'left': value+'%'});
-					}, 250);
-				});
-
-			});
-
-			watcher.exitViewport(function() {
-
-				$('.bar').each(function() {
-					$this = $(this);
-					var value = $this.data('chart-value');
-					var cost = $this.find('.cost');
-					var rectangle = $this.find('svg rect');
-						rectangle.attr({'width': '0%'});
-						cost.css({'left': '0%'});
-				});
-
-			});
-
-		} 
-
-		return watcher;
+		// setTimeout(function(){ 
+		// 	rectangle.setAttribute("width", value+'%' );
+		// 	valueText.css({'left': value+'%'});
+		// }, 100);
 
 	});
 
@@ -358,6 +314,8 @@ $(document).ready(function(){
 		infinite: true,
 		slidesToShow: 4,
 		slidesToScroll: 1,
+		prevArrow: '.glossary-section .previous-arrow',
+		nextArrow: '.glossary-section .next-arrow',
 		responsive: [
 			{
 				breakpoint: 1024,
@@ -383,44 +341,192 @@ $(document).ready(function(){
 					dots: true
 				}
 			}
-		// You can unslick at a given breakpoint now by adding:
-		// settings: "unslick"
-		// instead of a settings object
 		]
 	});
 
-	// ==============================================================*/
-	// Sections toggles
-	// ==============================================================*/
+	$('.card-slide .card-footer a').on('click', function(e){
+		e.preventDefault();
+		
+		if( $(this).closest('.card-slide').hasClass('active-card') ) {
+			
+			$(this).closest('.card-slide').toggleClass('active-card');
 
-	$('.toggle-section').first().addClass('active-section');
+		} else {
+
+			$('.card-slide').removeClass('active-card');
+			$(this).closest('.card-slide').addClass('active-card');
+
+		}
+
+	});
+	
+
+	// ==============================================================*/
+	// Section triggers via scrollmonitor.js and scrollToLink plugin
+	// ==============================================================*/
 
 	scrollToLinks();
 
-	var $sections = $('.section:visible'), 
+	var $section = $('.section'),
 		$nav = $('.navigation');
 
-	$(window).on('scroll', function () {
+	$section.each(function(index, section) {
+			
+		var sectionWatcher = scrollMonitor.create(section)
 
-		if ( !$('body').hasClass('moving') ) {
+		// Sets the current nav location on load
+		if ( sectionWatcher.height > 20 && sectionWatcher.isFullyInViewport ) {
 
-			var $currentPosition = $(this).scrollTop();
+			$nav.find('a[href="#'+section.id+'"]').addClass('current-nav');
 
-			$sections.each(function() {
-				
-				var $top = $(this).offset().top - 20,
-					$bottom = $top + $(this).outerHeight();
+		}
+		
+		sectionWatcher.stateChange( function() {
+			
+			// If the section is larger then 20 pixels, 
+			// the top of the section it below the top of the viewport
+			// and the top of it is less then the height of the space it takes up
+			if ( ( sectionWatcher.height > 20 ) && ( sectionWatcher.top >= scrollMonitor.viewportTop ) && ( sectionWatcher.top <= ( sectionWatcher.top + ( sectionWatcher.height ) ) ) ) {
 
-				if ($currentPosition >= $top && $currentPosition <= $bottom) {
-					
-					$sections.removeClass('current-section');
-					$(this).addClass('current-section');
+				$('.section').removeClass('current-section');
+				section.classList.add('current-section');
+
+				if ( !$('body').hasClass('moving') ) {
 
 					$nav.find('a').removeClass('current-nav');
-					$nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('current-nav');
+					$nav.find('a[href="#'+section.id+'"]').addClass('current-nav');
+
 				}
+
+			} else {
+
+			 	section.classList.remove('current-section');
+
+			}
+
+			
+		})
+
+	});
+
+	// ==============================================================*/
+	// Chart animation when scrolled to via scrollmonitor.js
+	// ==============================================================*/
+
+	var barCharts = $('.bar-chart-component').map(function(i, element) {
+
+		var barCharts = scrollMonitor.create( element );
+
+		barCharts.lock();
+
+		// Sets the current state location on load
+		if ( barCharts.isFullyInViewport ) {
+
+			$('.bar-chart').each(function() {
+
+				var $this = $(this),
+					value = $this.data('chart-value'),
+					valueText = $this.find('.bar-value-text'),
+					rectangle = $this.find('svg rect');
+
+				setTimeout(function(){
+					rectangle.attr({'width': value+'%'});
+					valueText.css({'left': value+'%'});
+				}, 250);
+
 			});
+
 		}
+
+		barCharts.fullyEnterViewport(function() {
+
+			$('.bar-chart').each(function() {
+
+				var $this = $(this),
+					value = $this.data('chart-value'),
+					valueText = $this.find('.bar-value-text'),
+					rectangle = $this.find('svg rect');
+
+				setTimeout(function(){
+					rectangle.attr({'width': value+'%'});
+					valueText.css({'left': value+'%'});
+				}, 100);
+			});
+
+		});
+
+		return barCharts;
+
+	});
+
+	// ==============================================================*/
+	// Tabs component
+	// ==============================================================*/
+
+	$('.tabs-component').each(function(){
+
+		var $component = $(this);
+		var $tabList = $component.find('.tab-list');
+		var $tabPanel = $component.find('.tab-panel');
+		var $tab = $component.find('.tab-list .button')
+		var $panelLabel = $component.find('.panel-label');
+
+		if ($(window).width() > 768) {
+
+			$tab.first().attr({"aria-selected": "true"}).addClass('active-tab');
+			$tabPanel.first().attr({"aria-hidden": "true"}).addClass('active-content');
+
+		}
+
+
+		$tab.on('click', function(e){
+
+			e.preventDefault();
+
+			$this = $(this);
+
+			$tabIndex = $this.index();
+			$tabTarget = $tabPanel.eq($tabIndex);
+
+			$tab.attr({"aria-selected": "false"}).removeClass('active-tab');
+			$this.attr({"aria-selected": "true"}).addClass('active-tab');
+
+			$tabPanel.attr({"aria-hidden": "false"}).removeClass('active-content');
+			$tabTarget.attr({"aria-hidden": "true"}).addClass('active-content');
+
+		});
+
+		$panelLabel.on('click', function(e){
+
+			e.preventDefault();
+
+			$this = $(this);
+			$labelTarget = $this.closest($tabPanel);
+
+			if( $labelTarget.hasClass('active-content') ) {
+
+				$labelTarget.attr({"aria-hidden": "false"}).removeClass('active-content');
+
+			} else {
+
+				$tabPanel.attr({"aria-hidden": "false"}).removeClass('active-content');
+				$labelTarget.attr({"aria-hidden": "true"}).addClass('active-content');
+
+				// Goes to the clicked item
+	            setTimeout(function(){
+
+	            	$headerHeight = $('.site-header').outerHeight();
+	                
+	                $('html, body').animate({
+	                    scrollTop:$this.offset().top-$headerHeight
+	                }, 300);
+
+	            }, 300);
+
+			}
+
+		});
+
 	});
 
 });

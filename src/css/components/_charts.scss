@@ -18,7 +18,7 @@
       margin: 0 auto;
    }
    circle {
-      fill: gray;
+      fill: $grayMed;
       stroke: $black;
       stroke-width: 16;
       transition: 1s $cbTrans all;
@@ -56,13 +56,14 @@
 .bar-chart {
   position: relative;
   display: inline-block;
-  background: $grayLight;
-  width: 100%;
+  background: $grayMed;
+  width: 84%;
+  width: calc(100% - 105px);
   margin: 10px 0;
   vertical-align: middle;
   svg {
     width: 100%; 
-    height: 60px;
+    height: 50px;
     display: block;
     margin: 0 auto;
   }
@@ -77,12 +78,12 @@
       color: $green;
     }
   }
-  &.light-green-scheme {
+  &.yellow-green-scheme {
     rect {
-      fill: lighten($green, 10%);
+      fill: $yellowGreen;
     }
     .bar-value-text {
-      color: lighten($green, 10%);
+      color: $yellowGreen;
     }
   }
   &.red-scheme {
@@ -101,20 +102,12 @@
       color: $orange;
     }
   }
-  &.light-orange-scheme {
-    rect {
-      fill: lighten($orange, 10%);
-    }
-    .bar-value-text {
-      color: lighten($orange, 10%);
-    }
-  }
   &.dark-orange-scheme {
     rect {
-      fill: darken($orange, 10%);
+      fill: $darkOrange;
     }
     .bar-value-text {
-      color: darken($orange, 10%);
+      color: $darkOrange;
     }
   }
   .bar-value-text {
@@ -127,6 +120,15 @@
     transition: 1s $cbTrans all;
   }
 }
+.bar-label {
+  width: 15%;
+  width: calc(100px);
+  text-align: right;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  line-height: 125%;
+}
 .chart-footer {
   text-transform: uppercase;
   padding: 10px 5px;
@@ -137,6 +139,7 @@
     font-size: 14px;
   }
   &:hover {
+    cursor: pointer;
     .tool-tip {
       &:before,
       &:after {

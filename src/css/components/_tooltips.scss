@@ -1,3 +1,7 @@
+/*==============================================================
+# Tool Tips
+==============================================================*/
+
 .tool-tip {
 	text-transform: none;
 	position: relative;
@@ -13,6 +17,7 @@
 	font-size: .85em;
 	font-style: italic;
 	text-indent: -2px;
+	cursor: pointer;
 	&:before,
 	&:after {
 		transition: .3s $cbTrans all;
@@ -25,7 +30,7 @@
 		display: block;
 		background: $white;
 		position: absolute;
-		box-shadow: 0px 1px 1px 1px $grayLight;
+		box-shadow: 0px 1px 1px 1px $grayMed;
 		bottom: 130%;
 		bottom: calc(100% + 20px);
 		left: 50%;
@@ -43,7 +48,7 @@
 		border-left: 0px solid $white;
 		border-right: 15px solid $white;
 		border-bottom: 15px solid transparent;
-		box-shadow: 2px -2px 4px 0px $grayLight;
+		box-shadow: 2px -2px 4px 0px $grayMed;
 		position: absolute;
 		left: 50%;
 		bottom: 100%;

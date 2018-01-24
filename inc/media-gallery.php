@@ -6,7 +6,7 @@
 
 			<div class="col-sm-12"><!-- BEGIN .col-sm-12 -->
 
-				<div class="component content-component">
+				<div class="component introduction-component">
 
 					<h2>Energy Efficiency &amp; Healthy Home Media Gallery</h2>
 
@@ -137,6 +137,20 @@
 							</div>
 							
 						</div>
+
+					</div>
+
+					<div class="view-option-container">
+						
+						<a href="#" class="button gray-color">
+							
+							See More
+
+							<svg>
+					            <use xlink:href="#icon-ui-caret-down" />
+					        </svg> 
+
+						</a>
 
 					</div>
 

@@ -258,7 +258,7 @@ function onboarding(options){
 
 function scrollToLinks() {
 	
-	$('.navigation a[href*=\\#]:not([href=\\#])').on("click", function(e) {
+	$('a[href*=\\#]:not([href=\\#]).jump-link').on("click", function(e) {
 		
 		e.preventDefault();
 		
@@ -273,8 +273,8 @@ function scrollToLinks() {
 				$('body').addClass('moving');
 				
 				if ( target.hasClass('toggle-section') ) {
-					$('.toggle-section').removeClass('active-section');
-					target.addClass('active-section');
+					$('.toggle-section').addClass('disabled-section');
+					target.removeClass('disabled-section');
 				}
 
 				$('.section').removeClass('current-section');
