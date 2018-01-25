@@ -226,7 +226,7 @@ $(document).ready(function(){
 	});
 
 	// ==============================================================*/
-	// Chart generation
+	// Chart generation init
 	// ==============================================================*/
 
 	function createSvgEl(tag) {
@@ -345,6 +345,7 @@ $(document).ready(function(){
 	});
 
 	$('.card-slide .card-footer a').on('click', function(e){
+		
 		e.preventDefault();
 		
 		if( $(this).closest('.card-slide').hasClass('active-card') ) {
@@ -358,8 +359,7 @@ $(document).ready(function(){
 
 		}
 
-	});
-	
+	});	
 
 	// ==============================================================*/
 	// Section triggers via scrollmonitor.js and scrollToLink plugin
@@ -419,7 +419,7 @@ $(document).ready(function(){
 
 		barCharts.lock();
 
-		// Sets the current state location on load
+		// Sets the bar chart state if in viewport on load
 		if ( barCharts.isFullyInViewport ) {
 
 			$('.bar-chart').each(function() {
@@ -438,6 +438,7 @@ $(document).ready(function(){
 
 		}
 
+		// Sets the bar chart state if in viewport on change of viewport/scrolling
 		barCharts.fullyEnterViewport(function() {
 
 			$('.bar-chart').each(function() {
@@ -465,28 +466,51 @@ $(document).ready(function(){
 
 	$('.tabs-component').each(function(){
 
-		var $component = $(this);
-		var $tabList = $component.find('.tab-list');
-		var $tabPanel = $component.find('.tab-panel');
-		var $tab = $component.find('.tab-list .button')
-		var $panelLabel = $component.find('.panel-label');
+		var $component = $(this),
+			$tabList = $component.find('.tab-list'),
+			$tabPanel = $component.find('.tab-panel'),
+			$tab = $component.find('.tab-list .button'),
+			$panelLabel = $component.find('.panel-label');
 
-		if ($(window).width() > 768) {
+		// Activates the first tab if larger then 768
+		if ( $(window).width() > 768 ) {
 
 			$tab.first().attr({"aria-selected": "true"}).addClass('active-tab');
 			$tabPanel.first().attr({"aria-hidden": "true"}).addClass('active-content');
 
 		}
 
+		// Resets the bar charts when hovering a inactive tab
+		$tab.on('mouseenter', function(e){
 
+			e.preventDefault();
+
+			var $this = $(this),
+				$tabIndex = $this.index(),
+				$tabTarget = $tabPanel.eq($tabIndex);
+
+			$('.tab-panel:not(.active-content)').find('.bar-chart').each(function() {
+
+				var $this = $(this),
+					value = $this.data('chart-value'),
+					valueText = $this.find('.bar-value-text'),
+					rectangle = $this.find('svg rect');
+				
+				rectangle.attr({'width': '0%'});
+				valueText.css({'left': '0%'});
+
+			});
+
+		});
+
+		// Active tab trigger w/ bar charts
 		$tab.on('click', function(e){
 
 			e.preventDefault();
 
-			$this = $(this);
-
-			$tabIndex = $this.index();
-			$tabTarget = $tabPanel.eq($tabIndex);
+			var $this = $(this),
+				$tabIndex = $this.index(),
+				$tabTarget = $tabPanel.eq($tabIndex);
 
 			$tab.attr({"aria-selected": "false"}).removeClass('active-tab');
 			$this.attr({"aria-selected": "true"}).addClass('active-tab');
@@ -494,14 +518,27 @@ $(document).ready(function(){
 			$tabPanel.attr({"aria-hidden": "false"}).removeClass('active-content');
 			$tabTarget.attr({"aria-hidden": "true"}).addClass('active-content');
 
+			$tabTarget.find('.bar-chart').each(function() {
+
+				var $this = $(this),
+					value = $this.data('chart-value'),
+					valueText = $this.find('.bar-value-text'),
+					rectangle = $this.find('svg rect');
+
+				rectangle.attr({'width': value+'%'});
+				valueText.css({'left': value+'%'});
+
+			});
+
 		});
 
+		// Active panel trigger for mobile state
 		$panelLabel.on('click', function(e){
 
 			e.preventDefault();
 
-			$this = $(this);
-			$labelTarget = $this.closest($tabPanel);
+			var $this = $(this),
+			 	$labelTarget = $this.closest($tabPanel);
 
 			if( $labelTarget.hasClass('active-content') ) {
 
@@ -515,7 +552,8 @@ $(document).ready(function(){
 				// Goes to the clicked item
 	            setTimeout(function(){
 
-	            	$headerHeight = $('.site-header').outerHeight();
+	            	// $headerHeight = $('.site-header').outerHeight();
+	            	$headerHeight = 50;
 	                
 	                $('html, body').animate({
 	                    scrollTop:$this.offset().top-$headerHeight
@@ -528,6 +566,31 @@ $(document).ready(function(){
 		});
 
 	});
+
+	// ==============================================================*/
+	// Show more/less grid
+	// ==============================================================*/
+
+	$('.gallery-section .grid-container').last().hide();
+
+	$('.view-option-container a').on('click', function(e) {
+
+		e.preventDefault();
+
+		$(this).toggleClass('active-button');
+
+		if( $(this).hasClass('active-button') ) {
+			$(this).find('.button-text').text('See Less')
+		} else {
+			$(this).find('.button-text').text('See More')
+		}
+
+		$('.gallery-section .grid-container').last().slideToggle();
+
+
+	});
+
+	
 
 });
 //# sourceMappingURL=maps/scripts.js.map

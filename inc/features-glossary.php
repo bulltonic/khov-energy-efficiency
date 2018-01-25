@@ -73,7 +73,25 @@
 										</div>
 
 										<div class="card-footer">
-											<a href="#">Learn More</a>
+
+											<a href="#">
+
+												<span class="link-icon">
+
+													<svg>
+							                        	<use xlink:href="#icon-ui-plus" />
+							                    	</svg> 
+
+							                    </span>
+
+												<span class="link-text">
+
+													Learn More
+
+												</span>
+
+											</a>
+
 										</div>
 
 									</div>
@@ -99,7 +117,25 @@
 										</div>
 
 										<div class="card-footer">
-											<a href="#">Back</a>
+
+											<a href="#">
+
+												<span class="link-icon">
+
+													<svg>
+							                        	<use xlink:href="#icon-ui-caret-left" />
+							                    	</svg> 
+
+							                    </span>
+
+												<span class="link-text">
+
+													Back
+
+												</span>
+
+											</a>
+
 										</div>
 
 									</div>
@@ -127,7 +163,25 @@
 										</div>
 
 										<div class="card-footer">
-											<a href="#">Learn More</a>
+											
+											<a href="#">
+
+												<span class="link-icon">
+
+													<svg>
+							                        	<use xlink:href="#icon-ui-plus" />
+							                    	</svg> 
+
+							                    </span>
+
+												<span class="link-text">
+
+													Learn More
+
+												</span>
+
+											</a>
+
 										</div>
 
 									</div>
@@ -151,7 +205,25 @@
 										</div>
 
 										<div class="card-footer">
-											<a href="#">Back</a>
+											
+											<a href="#">
+
+												<span class="link-icon">
+
+													<svg>
+							                        	<use xlink:href="#icon-ui-caret-left" />
+							                    	</svg> 
+
+							                    </span>
+
+												<span class="link-text">
+
+													Back
+
+												</span>
+
+											</a>
+
 										</div>
 
 									</div>
@@ -179,7 +251,25 @@
 										</div>
 
 										<div class="card-footer">
-											<a href="#">Learn More</a>
+
+											<a href="#">
+
+												<span class="link-icon">
+
+													<svg>
+							                        	<use xlink:href="#icon-ui-plus" />
+							                    	</svg> 
+
+							                    </span>
+
+												<span class="link-text">
+
+													Learn More
+
+												</span>
+
+											</a>
+											
 										</div>
 
 									</div>
@@ -203,7 +293,25 @@
 										</div>
 
 										<div class="card-footer">
-											<a href="#">Back</a>
+
+											<a href="#">
+
+												<span class="link-icon">
+
+													<svg>
+							                        	<use xlink:href="#icon-ui-caret-left" />
+							                    	</svg> 
+
+							                    </span>
+
+												<span class="link-text">
+
+													Back
+
+												</span>
+
+											</a>
+
 										</div>
 
 									</div>
@@ -231,7 +339,25 @@
 										</div>
 
 										<div class="card-footer">
-											<a href="#">Learn More</a>
+											
+											<a href="#">
+
+												<span class="link-icon">
+
+													<svg>
+							                        	<use xlink:href="#icon-ui-plus" />
+							                    	</svg> 
+
+							                    </span>
+
+												<span class="link-text">
+
+													Learn More
+
+												</span>
+
+											</a>
+
 										</div>
 
 									</div>
@@ -255,7 +381,25 @@
 										</div>
 
 										<div class="card-footer">
-											<a href="#">Back</a>
+
+											<a href="#">
+
+												<span class="link-icon">
+
+													<svg>
+							                        	<use xlink:href="#icon-ui-caret-left" />
+							                    	</svg> 
+
+							                    </span>
+
+												<span class="link-text">
+
+													Back
+
+												</span>
+
+											</a>
+
 										</div>
 
 									</div>
@@ -285,7 +429,25 @@
 										</div>
 
 										<div class="card-footer">
-											<a href="#">Learn More</a>
+											
+											<a href="#">
+
+												<span class="link-icon">
+
+													<svg>
+							                        	<use xlink:href="#icon-ui-plus" />
+							                    	</svg> 
+
+							                    </span>
+
+												<span class="link-text">
+
+													Learn More
+
+												</span>
+
+											</a>
+
 										</div>
 
 									</div>
@@ -309,7 +471,25 @@
 										</div>
 
 										<div class="card-footer">
-											<a href="#">Back</a>
+
+											<a href="#">
+
+												<span class="link-icon">
+
+													<svg>
+							                        	<use xlink:href="#icon-ui-caret-left" />
+							                    	</svg> 
+
+							                    </span>
+
+												<span class="link-text">
+
+													Back
+
+												</span>
+
+											</a>
+
 										</div>
 
 									</div>

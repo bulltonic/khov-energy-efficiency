@@ -4,7 +4,7 @@
 
 	<div class="row"><!-- BEGIN .row -->
 
-		<div class="col-sm-12"><!-- BEGIN .col-sm-12 -->
+		<div class="col-sm-12 col-md-11 col-md-offset-1"><!-- BEGIN .col-sm-12 -->
 
 			<div class="component rating-component vertical-orientation"><!-- BEGIN .rating-component -->
 
@@ -17,16 +17,16 @@
 						<li><span>30</span></li>
 						<li><span>40</span></li>
 						<li><span>50</span></li>
-
-						<li class="details detail-group detail-group-bottom">
-							<span>60</span>
-						</li>
+						<li><span>60</span></li>
 
 						<li class="details detail-group detail-group-top" data-detail-content="Typical new home from K. Hovnanian">
 							<span>70</span>
 						</li>
 
-						<li><span>80</span></li>
+						<li class="details detail-group detail-group-bottom">
+							<span>80</span>
+						</li>
+
 						<li><span>90</span></li>
 
 						<li class="details" data-detail-content="Typical home built between 2006 & 2010">
@@ -272,6 +272,26 @@
 			</div><!-- END .rating-component -->
 
 		</div><!-- END .col-sm-12 -->
+
+	</div><!-- END .row -->
+
+	<div class="row"><!-- BEGIN .row -->
+
+		<div class="component info-card-component"><!-- BEGIN .info-card-component -->
+		
+			<div class="col-sm-8"><!-- BEGIN .col-sm-8 -->
+				
+				<p>Information and slider developed by and provided with the permission of RESTNET<sup>&reg;</sup>. K.Hovnanian<sup>&reg;</sup> Homes is not responsible for the operation of the slider.</p>
+
+			</div><!-- END .col-sm-8 -->
+
+			<div class="col-sm-4"><!-- BEGIN .col-sm-4 -->
+
+				<a href="#" class="button gray-color">Learn More What is HERS?</a>
+
+			</div><!-- END .col-sm-4 -->
+
+		</div><!-- END .info-card-component -->
 
 	</div><!-- END .row -->
 

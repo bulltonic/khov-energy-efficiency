@@ -8,7 +8,7 @@
 
 	<div class="logo-container">
 		
-		<a href="/">
+		<a href="#main" class="jump-link">
 			<img src="img/logos/energy-efficiency-logo.png" alt="Building Energy Efficient & Healthy Homes Logo">
 		</a>
 

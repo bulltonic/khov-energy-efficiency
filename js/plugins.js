@@ -289,14 +289,20 @@ function scrollToLinks() {
 				    $('body').removeClass('moving');
 				    
 				 });
-
+				
 				$('.navigation a').removeClass('current-nav');
-				$(this).addClass('current-nav');
-
 				
 				// window.location.hash=$(this).attr('href');
 			}
 		}
+
+	});
+
+	$('.navigation ul li a').on("click", function(e) {
+		
+		e.preventDefault();
+
+		$(this).addClass('current-nav');
 
 	});
 

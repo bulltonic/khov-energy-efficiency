@@ -2,11 +2,15 @@
 	
 	<a href="#main" class="button gray-color jump-link">
 
-		Back To Top
+		<span class="button-text">Back To Top</span>
 
-		<svg>
-            <use xlink:href="#icon-ui-caret-up" />
-        </svg> 
+		<span class="button-icon">
+			
+			<svg>
+            	<use xlink:href="#icon-ui-caret-up" />
+        	</svg> 
+
+        </span>
 
 	</a>
 

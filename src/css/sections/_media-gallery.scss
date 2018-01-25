@@ -4,4 +4,23 @@
 
 .gallery-section {
 	padding: 100px 0;
+	.grid-container {
+		transition: .3s all $cbTrans;
+		&:last-child {
+			opacity: 0;
+			visibility: hidden;
+			height: 0;
+			overflow: hidden;
+			&.visible-container {
+				height: auto;
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+}
+.view-option-container {
+	float: left;
+    width: 100%;
+    text-align: center;
 }

@@ -105,11 +105,18 @@
             min-height: 300px;
             transition: .3s all $cbTrans;
         }
+        .link-icon {
+            margin: 0 5px 0 0;
+        }
         .foreground-content {
             &.card-content {
                 a {
                     color: $gray;
                 }
+            }
+            .link-icon {
+                border: 1px solid $teal;
+                fill: $teal;
             }
         }
         .background-content {
@@ -124,7 +131,10 @@
                     overflow-y: scroll;
                 }
             }
-
+            .link-icon {
+                border: 1px solid $white;
+                fill: $white;
+            }
         }
         .card-footer {
             position: absolute;
@@ -133,6 +143,7 @@
             width: 100%;
             text-align: center;
             width: 100%;
+            padding: 15px 10px;
         }
         .foreground-content {
             text-align: center;

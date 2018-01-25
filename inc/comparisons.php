@@ -18,7 +18,7 @@
 
 		<div class="row"><!-- BEGIN .row -->
 
-			<div class="col-sm-6"><!-- BEGIN .col-sm-12 -->
+			<div class="col-sm-12 col-md-6"><!-- BEGIN .col-sm-12 -->
 
 				<h4>Date To Compare</h4>
 
@@ -28,7 +28,7 @@
 		
 		<div class="row"><!-- BEGIN .row -->
 
-			<div class="col-sm-6"><!-- BEGIN .col-sm-12 -->
+			<div class="col-sm-12 col-md-6"><!-- BEGIN .col-sm-12 -->
 
 				<div class="component bar-chart-component tabs-component">
 
@@ -357,7 +357,7 @@
 
 			</div><!-- END .col-sm-12 -->
 
-			<div class="col-sm-6">
+			<div class="col-sm-12 col-md-6">
 				
 				<div class="component content-component">
 					

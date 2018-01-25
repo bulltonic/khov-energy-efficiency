@@ -55,17 +55,23 @@
 
 .bar-chart {
   position: relative;
-  display: inline-block;
+  display: block;
   background: $grayMed;
-  width: 84%;
-  width: calc(100% - 105px);
   margin: 10px 0;
   vertical-align: middle;
+  @include breakFirst(medium) {
+    width: 84%;
+    width: calc(100% - 105px);
+    display: inline-block;
+  }
   svg {
     width: 100%; 
-    height: 50px;
+    height: 35px;
     display: block;
     margin: 0 auto;
+    @include breakFirst(medium) {
+      height: 50px;
+    }
   }
   rect {
     transition: 1s $cbTrans all;
@@ -117,17 +123,25 @@
     padding: 0 10px;
     transform: translate3d(0, -50%, 0);
     left: 0;
+    font-size: 12px;
     transition: 1s $cbTrans all;
+    @include breakFirst(medium) {
+      font-size: 16px;
+    }
   }
 }
 .bar-label {
-  width: 15%;
-  width: calc(100px);
-  text-align: right;
-  display: inline-block;
-  vertical-align: middle;
+  display: block;
   font-size: 12px;
   line-height: 125%;
+  @include breakFirst(medium) {
+    width: 15%;
+    width: calc(100px);
+    text-align: right;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 5px 0 0;
+  }
 }
 .chart-footer {
   text-transform: uppercase;
