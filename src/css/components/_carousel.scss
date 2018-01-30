@@ -1,278 +1,486 @@
 /*==============================================================
 # Carousels
 ==============================================================*/
+
 .carousel-component {
-    position: relative;
+	position: relative;
 }
-.slides-wrapper {
-    width: 100%;
-    margin: 0 auto;
-    img {
-        float: left;
-    }
-}
-.arrow-wrapper {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 5;
-    width: 50px;
-    &.previous-arrow {
-        left: -20px;
-    }
-    &.next-arrow {
-        right: -20px;
-    }
-    svg {
-        fill: $gray;
-        display: inline-block;
-    }
-}
-.slides-navigation-wrapper {
-    text-align: center;
-    position: absolute;
-    bottom: 0;
+.modal-carousel {
+    position: fixed;
+    width: 100vw;
+    top: 0;
     left: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, .5);
-    color: $white;
-    li {
-        max-width: 160px;
-        display: inline-block !important;
-        float: none;
-        line-height: 45px;
-        padding: 5px 15px;
-        cursor: pointer;
-        transition: .3s all $cbTrans;
-        @include breakFirst(medium) {
-            &:hover {
-                background-color: rgba(0, 0, 0, .5);
-            }
-        }
-        &.slick-current {
-            background-color: $teal;
-        }
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s $cbTrans;
+    height: 100vh;
+    overflow: scroll;
+    .active-media-modal & {
+	 	opacity: 1;
+    	visibility: visible;
+    	z-index: 1000;
     }
+	.carousel-component {
+		max-height: 100vh;
+		width: 100vw;
+		position: absolute;
+		top: 50%;
+		z-index: 1001;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		height: auto;
+    }
+    .slick-slider {
+    	padding: 0 20px;
+    }
+    .section-overlay {
+		background: $black;
+		opacity: .5;
+		position: fixed;
+		height: 100vh;
+		width: 100vw;
+		top: 0;
+		left: 0;
+		z-index: 0
+    }
+    .close-button {
+		position: absolute;
+		top: 10px;
+		right: 45px;
+		width: 40px;
+		height: 40px;
+		padding: 7px;
+		backface-visibility: hidden;
+		border: 2px solid $teal;
+    	border-radius: 100%;
+		.icon {
+			float: left;
+			width: 100%;
+			height: 100%;
+			svg {
+				fill: $teal;
+			}
+		}
+    }
+    .arrow-wrapper {
+    	width: 35px;
+		@include breakFirst(medium) {
+			width: 50px;
+		}
+		&.previous-arrow {
+			left: 0px;
+			@include breakFirst(medium) {
+				left: -20px;
+			}
+		}
+		&.next-arrow {
+			right: 0px;
+			@include breakFirst(medium) {
+				right: -20px;
+			}
+		}
+		svg {
+			fill: $white;
+		}
+	}
+	.slide-details {
+		color: white;
+		position: absolute;
+		left: 0;
+		z-index: 1;
+		&.slide-header {
+			top: 0;
+			right: 0;
+			padding: 20px;
+    		background: rgba($black, .8);
+    		h5 {
+    			font-size: 18px;
+    			text-transform: uppercase;
+    			margin: 0;
+    		}
+		}
+		&.slide-footer {
+			bottom: 0;
+		}
+	}
+	.slide-numbers {
+		float: left;
+		padding: 10px;
+		background: rgba($black, .8);
+	    max-height: 40px;
+        font-size: 14px;
+		.total-slide-number {
+			&:before {
+				content: "/";
+				display: inline-block;
+				margin: 0 3px 0;
+			}
+		}
+	}
+	.fullscreen-button {
+		float: right;
+		background: rgba($black, .8);
+		width: 40px;
+		height: 40px;
+		padding: 10px;
+		svg {
+			fill: $white;
+			float: left;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.slide-caption {
+		float: left;
+		display: block;
+		width: 100%;
+		padding: 20px;
+		background: rgba($black, .8);
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
 }
 .bathroom-slide {
-    position: relative;
-    .slide-background {
-        @include background-cover(center, center);
-        @include fill-parent(-4);
-        background-image: url('../img/carousels/kitchen.jpg');
-        filter: blur(30px);
-    }
+	position: relative;
+	.slide-background {
+		@include background-cover(center, center);
+		@include fill-parent(-4);
+		background-image: url('../img/carousels/kitchen.jpg');
+		filter: blur(30px);
+	}
 }
 .glossary-section {
-    .slides-wrapper {
-        padding: 0 50px;
-        margin: 10px 0 75px;
-    }
-    .slick-list {
-        @include breakFirst(medium) {
-            &:hover{
-                .card-slide {
-                    box-shadow: 0 0px 2px 1px $grayMed;
-                    &:hover {
-                        box-shadow: 0 2px 4px 3px $grayMed;
-                    }
-                }
-            }
-        }
-    }
-    .card-slide {
-        position: relative;
-        overflow: hidden;
-        margin: 15px;
-        background: lighten($grayLight, 5%);
-        box-shadow: 0 0px 3px 2px $grayMed;
-        transition: .3s all $cbTrans;
-        &.active-card {
-            .background-content {
-                 transform: translateY(0%);
-            }
-            .foreground-content {
-                transform: translate3d(0, 30%, 0);
-            }
-        }
-        .card-title,
-        .card-body,
-        .card-footer {
-            padding: 10px;
-        }
-        .card-content {
-            padding: 15px 10px;
-            min-height: 300px;
-            transition: .3s all $cbTrans;
-        }
-        .link-icon {
-            margin: 0 5px 0 0;
-        }
-        .foreground-content {
-            &.card-content {
-                a {
-                    color: $gray;
-                }
-            }
-            .link-icon {
-                border: 1px solid $teal;
-                fill: $teal;
-            }
-        }
-        .background-content {
-            &.card-content {
-                a {
-                    color: $white;
-                }
-            }
-            .card-body {
-                @include breakFirst(large) {
-                    max-height: 175px;
-                    overflow-y: scroll;
-                }
-            }
-            .link-icon {
-                border: 1px solid $white;
-                fill: $white;
-            }
-        }
-        .card-footer {
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            text-align: center;
-            width: 100%;
-            padding: 15px 10px;
-        }
-        .foreground-content {
-            text-align: center;
-            position: relative;
-            z-index: 0;
-            transform: translate3d(0, 0, 0);
-            .card-title {
-                margin: 20px 0 0px;
-                padding: 0 0 30px;
-            }
-            h4 {
-                font-size: 16px;
-                line-height: 145%;
-            }
-            .icon {
-                width: 90px;
-                height: 90px;
-                margin-bottom: 25px;
-                border: 5px solid $white;
-            }
-        }
-        .background-content {
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            top: 0;
-            left: 0;
-            transform: translateY(100%);
-            background: $teal;
-            color: $white;
-            overflow: scroll;
-            .icon {
-                width: 45px;
-                height: 45px;
-                margin-right: 5px;
-            }
-            h4 {
-                font-size: 16px;
-                margin: 0;
-                display: inline-block;
-                vertical-align: middle;
-                max-width: 75%;
-                max-width: calc(100% - 55px);
-            }
-            p {
-                font-size: 14px;
-            }
-        }
-    }
+	.slides-wrapper {
+		padding: 0 50px;
+		margin: 10px 0 75px;
+	}
+	.slick-list {
+		@include breakFirst(medium) {
+			&:hover{
+				.card-slide {
+					box-shadow: 0 0px 2px 1px $grayMed;
+					&:hover {
+						box-shadow: 0 2px 4px 3px $grayMed;
+					}
+				}
+			}
+		}
+	}
+	.card-slide {
+		position: relative;
+		overflow: hidden;
+		margin: 15px;
+		background: $grayLight;
+		box-shadow: 0 0px 3px 2px $grayMed;
+		transition: .3s all $cbTrans;
+		&.active-card {
+			.background-content {
+				 transform: translateY(0%);
+			}
+			.foreground-content {
+				transform: translate3d(0, 30%, 0);
+			}
+		}
+		.card-title,
+		.card-body,
+		.card-footer {
+			padding: 10px;
+		}
+		.card-content {
+			padding: 15px 10px;
+			min-height: 300px;
+			transition: .3s all $cbTrans;
+		}
+		.link-icon {
+			margin: 0 5px 0 0;
+		}
+		.foreground-content {
+			&.card-content {
+				a {
+					color: $gray;
+				}
+			}
+			.link-icon {
+				border: 1px solid $teal;
+				fill: $teal;
+			}
+		}
+		.background-content {
+			&.card-content {
+				a {
+					color: $white;
+				}
+			}
+			.card-body {
+				@include breakFirst(large) {
+					max-height: 175px;
+					overflow-y: scroll;
+				}
+			}
+			.link-icon {
+				border: 1px solid $white;
+				fill: $white;
+			}
+		}
+		.card-footer {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			text-align: center;
+			width: 100%;
+			padding: 15px 10px;
+		}
+		.foreground-content {
+			text-align: center;
+			position: relative;
+			z-index: 0;
+			transform: translate3d(0, 0, 0);
+			.card-title {
+				margin: 20px 0 0px;
+				padding: 0 0 30px;
+			}
+			h4 {
+				font-size: 16px;
+				line-height: 145%;
+			}
+			.icon {
+				width: 90px;
+				height: 90px;
+				margin-bottom: 25px;
+				border: 5px solid $white;
+			}
+		}
+		.background-content {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			top: 0;
+			left: 0;
+			transform: translateY(100%);
+			background: $teal;
+			color: $white;
+			overflow: scroll;
+			.icon {
+				width: 45px;
+				height: 45px;
+				margin-right: 5px;
+			}
+			h4 {
+				font-size: 16px;
+				margin: 0;
+				display: inline-block;
+				vertical-align: middle;
+				max-width: 75%;
+				max-width: calc(100% - 55px);
+			}
+			p {
+				font-size: 14px;
+			}
+		}
+	}
 }
-
-.slick-slider {
+.video-slide {
+	.slide-content {
+		position: relative;
+		/*padding-bottom: 56.25%; /* 16:9 */
+		padding-bottom: 54%;
+		padding-top: 25px;
+		height: 0;
+		overflow: hidden;
+	}
+	img {
+		min-width: 100%;
+		height: auto;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		opacity: 1;
+		visibility: visible;
+		transition: .3s $cbTrans all;
+	}
+	&.active-video {
+		img {
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 20;
+	}
+}
+.slides-wrapper {
+	width: 100%;
+	margin: 0 auto;
+	img {
+		float: left;
+	}
+}
+.slide-content {
     position: relative;
-    display: block;
-    box-sizing: border-box;
-    user-select: none;
-    -webkit-touch-callout: none;
-    -khtml-user-select: none;
-    touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent;
+    float: left;
+    width: 100%;
+    .play-button {
+	    position: absolute;
+	    z-index: 10;
+	    transform: translate(-50%, -50%);
+	    top: 50%;
+	    left: 50%;
+	    width: 100px;
+	    height: 100px;
+	    svg {
+	    	fill: $white;
+	    	float: left;
+	    	width: 100%;
+	    	height: 100%;
+	    	transition: .3s $cbTrans all;
+	    }
+	    @include breakFirst(medium){
+	    	&:hover {
+	    		svg {
+	    			fill: $teal;
+	    		}
+	    	}
+	    }
+	}
+}
+.arrow-wrapper {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 5;
+	width: 50px;
+	&.previous-arrow {
+		left: -10px;
+	}
+	&.next-arrow {
+		right: -10px;
+	}
+	svg {
+		fill: $gray;
+		display: inline-block;
+	}
+	button {
+		outline: none;
+		appearance: none;
+		border: none;
+		background: none;
+		padding: 0;
+		margin: 0;
+	}
+}
+.slides-navigation-wrapper {
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(0, 0, 0, .5);
+	color: $white;
+	li {
+		display: inline-block !important;
+		float: none;
+		line-height: 45px;
+		padding: 5px 15px;
+		cursor: pointer;
+		transition: .3s all $cbTrans;
+		@include breakFirst(medium) {
+			max-width: 160px;
+			&:hover {
+				background-color: rgba(0, 0, 0, .5);
+			}
+		}
+		&.slick-current {
+			background-color: $teal;
+		}
+	}
+}
+.slick-slider {
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+	touch-action: pan-y;
+	-webkit-tap-highlight-color: transparent;
 }
 .slick-list {
-    position: relative;
-    display: block;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
+	position: relative;
+	display: block;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
 }
 .slick-list:focus {
-    outline: none;
+	outline: none;
 }
 .slick-list.dragging {
-    cursor: pointer;
-    cursor: hand;
+	cursor: pointer;
+	cursor: hand;
 }
 .slick-slider .slick-track,
 .slick-slider .slick-list {
-    transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
 }
 
 .slick-track {
-    position: relative;
-    top: 0;
-    left: 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+	position: relative;
+	top: 0;
+	left: 0;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 .slick-track:before,
 .slick-track:after {
-    display: table;
-    content: '';
+	display: table;
+	content: '';
 }
 .slick-track:after {
-    clear: both;
+	clear: both;
 }
 .slick-loading .slick-track {
-    visibility: hidden;
+	visibility: hidden;
 }
 .slick-slide {
-    display: none;
-    float: left;
-    height: 100%;
-    min-height: 1px;
-    outline: none;
+	display: none;
+	float: left;
+	height: 100%;
+	min-height: 1px;
+	outline: none;
 }
 [dir='rtl'] .slick-slide {
-    float: right;
+	float: right;
 }
 .slick-slide img {
-    display: block;
+	display: block;
 }
 .slick-slide.slick-loading img {
-    display: none;
+	display: none;
 }
 .slick-slide.dragging img {
-    pointer-events: none;
+	pointer-events: none;
 }
 .slick-initialized .slick-slide {
-    display: block;
+	display: block;
 }
 .slick-loading .slick-slide {
-    visibility: hidden;
+	visibility: hidden;
 }
 .slick-vertical .slick-slide {
-    display: block;
-    height: auto;
-    border: 1px solid transparent;
+	display: block;
+	height: auto;
+	border: 1px solid transparent;
 }
 .slick-arrow.slick-hidden {
-    display: none;
+	display: none;
 }

@@ -12,35 +12,35 @@
 
 					<ul>
 
-						<li><span>10</span></li>
-						<li><span>20</span></li>
-						<li><span>30</span></li>
-						<li><span>40</span></li>
-						<li><span>50</span></li>
-						<li><span>60</span></li>
+						<li><span>140</span></li>
+						<li><span>130</span></li>
+						<li><span>120</span></li>
+						<li><span>110</span></li>
+						<li><span>100</span></li>
+						<li><span>90</span></li>
 
 						<li class="details detail-group detail-group-top" data-detail-content="Typical new home from K. Hovnanian">
-							<span>70</span>
-						</li>
-
-						<li class="details detail-group detail-group-bottom">
 							<span>80</span>
 						</li>
 
-						<li><span>90</span></li>
+						<li class="details detail-group detail-group-bottom">
+							<span>70</span>
+						</li>
+
+						<li><span>60</span></li>
 
 						<li class="details" data-detail-content="Typical home built between 2006 & 2010">
-							<span>100</span>
+							<span>50</span>
 						</li>
 
-						<li><span>110</span></li>
-						<li><span>120</span></li>
+						<li><span>40</span></li>
+						<li><span>30</span></li>
 
 						<li class="details" data-detail-content="Typical used home">
-							<span>130</span>
+							<span>20</span>
 						</li>
 
-						<li><span>140</span></li>
+						<li><span>10</span></li>
 
 					</ul>
 
@@ -65,31 +65,35 @@
  
 										<h3><span class="value value-rating">70</span> HERS RATING</h3>
 
-								</div>
+								</div><!-- END .header-title -->
 
 								<div class="header-details"><!-- BEGIN .header-details -->
  
 							 		<h4>Annual Energy Savings</h4>
 
-							 		<div class="detail-item value-detail new-home-detail"><!-- BEGIN .detail-item -->
+							 		<div class="detail-items"><!-- BEGIN .detail-items -->
 
-							  		<span class="value value-amount">$0</span>
+								 		<div class="detail-item value-detail new-home-detail"><!-- BEGIN .detail-item -->
 
-							  		<span class="value value-label">For a newly built home</span>
+									  		<span class="value value-amount">$0</span>
 
-							 		</div>
+									  		<span class="value value-label">For a newly built home</span>
 
-									<div class="detail-item value-detail old-home-detail"><!-- BEGIN .detail-item -->
+								 		</div><!-- END .detail-item -->
 
-										<span class="value value-amount">$0</span>
+										<div class="detail-item value-detail old-home-detail"><!-- BEGIN .detail-item -->
 
-										<span class="value value-label">For a older home</span>
+											<span class="value value-amount">$0</span>
 
-									</div>
+											<span class="value value-label">For a older home</span>
 
-								</div>
+										</div><!-- END .detail-item -->
 
-							</div>
+									</div><!-- END .detail-items -->
+
+								</div><!-- END .header-details -->
+
+							</div><!-- END .block-header -->
 
 							<div class="block-body"><!-- BEGIN .block-body -->
 
@@ -105,19 +109,19 @@
 
 										<div class="chart-body"><!-- BEGIN .chart-body -->
 
-											<div class="bar-chart orange-scheme" data-chart-value="36"><!-- BEGIN .bar-chart -->
+											<div class="bar-wrapper"><!-- BEGIN .bar-wrapper -->
 
-												<span class="bar-value-text">$1,030</span>
+						                    	<div class="bar-label">20 Year Old Home</div>
+						                        
+						                        <div class="bar-chart orange-scheme" data-chart-value="78"><!-- BEGIN .bar-chart -->
 
-											</div><!-- END .bar-chart -->
+													<span class="bar-value-text">$1,030</span>
+
+												</div><!-- END .bar-chart -->
+
+						                    </div><!-- END .bar-wrapper -->
 
 										</div><!-- END .chart-body -->
-
-										<div class="chart-footer"><!-- BEGIN .chart-footer -->
-
-											<p>"Watch Out" Color <i class="tool-tip" data-tool-tip="Tool tip content!">i</i></p>
-
-										</div><!-- END .chart-footer -->
 
 									</div><!-- END .chart-content -->
 
@@ -125,19 +129,19 @@
 
 										<div class="chart-body"><!-- BEGIN .chart-body -->
 
-											<div class="bar-chart green-scheme" data-chart-value="22"><!-- BEGIN .bar-chart -->
+											<div class="bar-wrapper"><!-- BEGIN .bar-wrapper -->
 
-												<span class="bar-value-text">$586</span>
+						                    	<div class="bar-label">5 Year Old Home</div>
+						                        
+						                        <div class="bar-chart green-scheme" data-chart-value="22"><!-- BEGIN .bar-chart -->
 
-											</div><!-- END .bar-chart -->
+													<span class="bar-value-text">$586</span>
+
+												</div><!-- END .bar-chart -->
+
+						                    </div><!-- END .bar-wrapper -->
 
 										</div><!-- END .chart-body -->
-
-										<div class="chart-footer"><!-- BEGIN .chart-footer -->
-
-											<p>Green Color <i class="tool-tip" data-tool-tip="Tool tip content!">i</i></p>
-
-										</div><!-- END .chart-footer -->
 
 									</div><!-- END .chart-content -->
 
@@ -145,19 +149,19 @@
 
 										<div class="chart-body"><!-- BEGIN .chart-body -->
 
-											<div class="bar-chart red-scheme" data-chart-value="81"><!-- BEGIN .bar-chart -->
+											<div class="bar-wrapper"><!-- BEGIN .bar-wrapper -->
 
-												<span class="bar-value-text">$13,030</span>
+						                    	<div class="bar-label">98 Year Old Home</div>
+						                        
+						                        <div class="bar-chart red-scheme" data-chart-value="81"><!-- BEGIN .bar-chart -->
 
-											</div><!-- END .bar-chart -->
+													<span class="bar-value-text">$13,030</span>
 
-										</div><!-- END .chart-body -->
+												</div><!-- END .bar-chart -->
 
-										<div class="chart-footer"><!-- BEGIN .chart-footer -->
+						                    </div><!-- END .bar-wrapper -->
 
-											<p>Red Color <i class="tool-tip" data-tool-tip="Tool tip content!">i</i></p>
-
-										</div><!-- END .chart-footer -->
+						                </div><!-- END .chart-body -->
 
 									</div><!-- END .chart-content -->
 
@@ -181,21 +185,25 @@
  
  									<h4>Annual Energy Savings</h4>
 
- 									<div class="detail-item value-detail new-home-detail"><!-- BEGIN .detail-item -->
+ 									<div class="detail-items"><!-- BEGIN .detail-items -->
 
-										<span class="value value-amount">$0</span>
+	 									<div class="detail-item value-detail new-home-detail"><!-- BEGIN .detail-item -->
 
-  									<span class="value value-label">For a newly built home</span>
+											<span class="value value-amount">$0</span>
 
- 									</div><!-- END .detail-item -->
+	  									<span class="value value-label">For a newly built home</span>
 
-									<div class="detail-item value-detail old-home-detail"><!-- BEGIN .detail-item -->
+	 									</div><!-- END .detail-item -->
 
-										<span class="value value-amount">$0</span>
+										<div class="detail-item value-detail old-home-detail"><!-- BEGIN .detail-item -->
 
-										<span class="value value-label">For a older home</span>
+											<span class="value value-amount">$0</span>
 
-									</div><!-- END .detail-item -->
+											<span class="value value-label">For a older home</span>
+
+										</div><!-- END .detail-item -->
+
+									</div><!-- END .detail-items -->
 
 								</div><!-- END .header-details -->
 

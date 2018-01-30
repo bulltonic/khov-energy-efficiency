@@ -60,6 +60,18 @@
 				width: calc(66%);
 				.grid-item {
 					padding-bottom: 70%;
+					.grid-item-content {
+						.content-details {
+							max-width: calc(100% - 90px);
+						}
+						h4 {
+							font-size: 24px;
+						}
+						.content-icon {
+				    		width: 70px;
+				    		height: 70px;
+				    	}
+					}
 				}
 			}
 		}
@@ -70,6 +82,7 @@
 			height: 0;
 			margin-bottom: 15px;
 			margin-bottom: calc(20px);
+			cursor: pointer;
 			.grid-item-background {
 				@include background-cover(center, center);
 				@include fill-parent(-4);
@@ -78,19 +91,37 @@
 				position: absolute;
 				left: 15px;
 				bottom: 15px;
+				right: 15px;
 				color: $white;
-				h3, h4 {
+				.content-details {
+					width: 100%;
+					@include breakFirst(large) {
+						display: inline-block;
+						max-width: calc(100% - 60px);
+						vertical-align: middle;
+						padding: 5px 0 5px 10px;
+					}
+				}
+				.content-icon {
+				    width: 50px;
+				    height: 50px;
+				    margin-bottom: 10px;
+				    @include breakFirst(large) {
+				    	margin-bottom: 0;
+				    	vertical-align: middle;
+				    	display: inline-block;
+				    }
+				    svg {
+						float: left;
+						width: 100%;
+						height: 100%;
+						fill: white;
+				    }
+				}
+				h4 {
 					font-weight: normal;
 					margin-bottom: 10px;
 					display: block;
-				}
-				h3 {
-					font-size: 16px;
-					@include breakFirst(large) {
-						font-size: 24px;
-					}
-				}
-				h4 {
 					font-size: 16px;
 				}
 				sup {
@@ -102,20 +133,32 @@
 					color: $white;
 					padding: 5px 10px;
 					border-radius: 3px;
-					font-size: 12px;
+					font-size: 10px;
 					text-transform: uppercase;
 					margin: 2px;
+					@include breakFirst(medium) {
+						font-size: 8px;
+					}
+					@include breakFirst(large) {
+						font-size: 12px;
+					}
 					&:first-of-type {
 						margin: 2px 2px 2px 0;
 					}
 				    &.orange-scheme {
 				        background: $orange;
 				    }
+				    &.dark-orange-scheme {
+				        background: $darkOrange;
+				    }
 				    &.green-scheme {
 				        background: $green;
 				    }
-				    &.dark-orange-scheme {
-				        background: $darkOrange;
+				    &.yellow-green-scheme {
+				        background: $yellowGreen;
+				    }
+				    &.red-scheme {
+				        background: $red;
 				    }
 				    &.magenta-scheme {
 				        background: $magenta;
