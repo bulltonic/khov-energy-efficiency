@@ -4,7 +4,7 @@ var gulp = require('gulp'),
 
 // Node server
 gulp.task('php', function() {
-    php.server({ base: '.', hostname: 'localhost', port: 8010, keepalive: true});
+    php.server({ base: '.', hostname: 'localhost', port: 8010, keepalive: true, open: true});
 });
 
 // SVG Sprites
@@ -25,8 +25,9 @@ gulp.task('svg-sprite', function() {
 // CSS
 gulp.task('styles', function () {
   return gulp.src('./src/css/**/*.scss')
+    .pipe(plugins.plumber({errorHandler: plugins.notify.onError("Error: <%= error.message %>")}))
     .pipe(plugins.sourcemaps.init())
-      .pipe(plugins.sass({outputStyle: 'compressed'}).on('error', plugins.sass.logError))
+      .pipe(plugins.sass({outputStyle: 'compressed'}))
       .pipe(plugins.autoprefixer({
           browsers: ['last 2 versions', 'safari 6', 'ie 9', 'ios 7', 'android 4']
         }))
@@ -37,6 +38,7 @@ gulp.task('styles', function () {
 // JS - custom scripts
 gulp.task('scripts', function() {
   return gulp.src('./src/js/scripts.js')
+    .pipe(plugins.plumber({errorHandler: plugins.notify.onError("Error: <%= error.message %>")}))
     .pipe(plugins.sourcemaps.init())
       .pipe(plugins.concat('scripts.js'))
       .pipe(plugins.minify())
@@ -47,6 +49,7 @@ gulp.task('scripts', function() {
 // JS - plugins
 gulp.task('scripts-plugin', function() {
   return gulp.src('./src/js/plugins/*.js')
+    .pipe(plugins.plumber({errorHandler: plugins.notify.onError("Error: <%= error.message %>")}))
     .pipe(plugins.sourcemaps.init())
       .pipe(plugins.concat('plugins.js'))
       .pipe(plugins.minify())
@@ -58,6 +61,7 @@ gulp.task('scripts-plugin', function() {
 // Copy these files from /src/js/lib to /js/lib to maintain full file
 gulp.task('scripts-lib', function() {
   gulp.src('./src/js/lib/**/*')
+    .pipe(plugins.plumber({errorHandler: plugins.notify.onError("Error: <%= error.message %>")}))
     .pipe(gulp.dest('./js/lib'));
 });
 
@@ -83,5 +87,17 @@ gulp.task('watch', function() {
 
 // Default Tasks
 gulp.task('default', ['php', 'scripts', 'scripts-lib', 'scripts-plugin', 'styles', 'svg-sprite', 'watch']);
+
+let server = new php();
+
+// Start sterver by itself
+gulp.task('connect', function() {
+  server.server({ base: '.', hostname: 'localhost', port: 8010, keepalive: true, open: true});
+});
+
+// Kill Server
+gulp.task('disconnect', function() {
+  server.closeServer();
+});
 
 

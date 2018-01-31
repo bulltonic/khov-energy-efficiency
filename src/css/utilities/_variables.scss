@@ -5,103 +5,103 @@
 // Colors
 // --------------------------------------------------
 
-$white:							#fff !default;
-$black:							#000;
-$grayDark:              		#121212;
-$grayMed:						#e0e0e0;
-$grayLight:						#f8f8f8;
-$gray:							#595757;
-$neonGreen:						#D6FB1A;
-$purple: 						#772B90;
-$yellow: 						#FFBD00;
-$blue:							#22A3F1;
-$teal:							#87bdc4;
-$red:							#ee3624;
-$green:							#aeca37;
-$yellowGreen:					#ccbe3b;
-$orange:						#edb220;
-$darkOrange:					#f8772d;
-$magenta:						#bd1871;
+$white:													#fff !default;
+$black:													#000;
+$grayDark:											#121212;
+$grayMed:												#e0e0e0;
+$grayLight:											#f8f8f8;
+$gray:													#595757;
+$neonGreen:											#D6FB1A;
+$purple:												#772B90;
+$yellow:												#FFBD00;
+$blue:													#22A3F1;
+$teal:													#87bdc4;
+$red:														#ee3624;
+$green:													#aeca37;
+$yellowGreen:										#ccbe3b;
+$orange:												#edb220;
+$darkOrange:										#f8772d;
+$magenta:												#bd1871;
 
 
 // Scaffolding
 // --------------------------------------------------
 
-$bodyBackground:        		$white !default;
-$textColor:             		$grayDark !default;
+$bodyBackground:								$white !default;
+$textColor:											$grayDark !default;
 
 
 // Links
 // --------------------------------------------------
 
-$linkColor:             		blue !default;
-$linkColorHover:        		darken($linkColor, 15%) !default;
+$linkColor:											blue !default;
+$linkColorHover:								darken($linkColor, 15%) !default;
 
 // Buttons
 // --------------------------------------------------
 
-$buttonBackground:				$gray;
-$buttonColor:					$white;
-$buttonBackgroundHover:			$grayLight;
-$buttonColorHover:				$gray;
+$buttonBackground:							$gray;
+$buttonColor:										$white;
+$buttonBackgroundHover:					$grayLight;
+$buttonColorHover:							$gray;
 
 // Transitions
 // --------------------------------------------------
 
-$cbTrans: 						cubic-bezier(0.165, 0.84, 0.44, 1);
-$pageTrans: 					cubic-bezier(.54,.06,.55,.97);
+$cbTrans:												cubic-bezier(0.165, 0.84, 0.44, 1);
+$pageTrans:											cubic-bezier(.54,.06,.55,.97);
 
 // Typography
 // --------------------------------------------------
 
-$sansSerif:						'Raleway', "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$serif:							Times, Georgia, serif;
+$sansSerif:											'Raleway', "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$serif:													Times, Georgia, serif;
 		
-$baseFontSize:          		16px !default;
-$baseLineHeight:        		1.65 !default;
+$baseFontSize:									16px !default;
+$baseLineHeight:								1.65 !default;
 
 // Media query breakpoints
 // --------------------------------------------------
 
 // Extra small screen / phone
-$screen-xs:                  	480px !default;
-$screen-phone:               	$screen-xs !default;
+$screen-xs:											480px !default;
+$screen-phone:									$screen-xs !default;
 
 // Small screen / tablet
-$screen-sm:                  	768px !default;
-$screen-tablet:              	$screen-sm !default;
+$screen-sm:											768px !default;
+$screen-tablet:									$screen-sm !default;
 
 // Medium screen / desktop
-$screen-md:                  	992px !default;
-$screen-desktop:             	$screen-md !default;
+$screen-md:											992px !default;
+$screen-desktop:								$screen-md !default;
 
 // Large screen / wide desktop
-$screen-lg:                  	1220px !default;
-$screen-lg-desktop:          	$screen-lg !default;
+$screen-lg:											1220px !default;
+$screen-lg-desktop:							$screen-lg !default;
 
 // So media queries don't overlap when required, provide a maximum
-$screen-xs-max:              	($screen-sm - 1) !default;
-$screen-sm-max:              	($screen-md - 1) !default;
-$screen-md-max:              	($screen-lg - 1) !default;
+$screen-xs-max:									($screen-sm - 1) !default;
+$screen-sm-max:									($screen-md - 1) !default;
+$screen-md-max:									($screen-lg - 1) !default;
 
 // Grid system
 // --------------------------------------------------
 
 // Number of columns in the grid system
-$grid-columns:              	12 !default;
+$grid-columns:                  12 !default;
 // Padding, to be divided by two and applied to the left and right of all columns
-$grid-gutter-width:         	30px !default;
+$grid-gutter-width:             30px !default;
 // Point at which the navbar stops collapsing
-$grid-float-breakpoint:     	$screen-tablet !default;
+$grid-float-breakpoint:         $screen-tablet !default;
 
 // Container sizes
 // --------------------------------------------------
 
 // Small screen / tablet
-$container-tablet:            	((720px + $grid-gutter-width)) !default;
+$container-tablet:              ((720px + $grid-gutter-width)) !default;
 
 // Medium screen / desktop
-$container-desktop:           	((940px + $grid-gutter-width)) !default;
+$container-desktop:             ((940px + $grid-gutter-width)) !default;
 
 // Large screen / wide desktop
-$container-lg-desktop:        	((1140px + $grid-gutter-width)) !default;
+$container-lg-desktop:          ((1140px + $grid-gutter-width)) !default;

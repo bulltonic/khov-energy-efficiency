@@ -33,14 +33,21 @@ Based off of [Project Build w/ Gulp.js](https://github.com/bulltonic/html-sass-g
 1. To install you position yourself in the project folder by traversing via terminal using the cd command and install using npm by running the command below:<br />
 `$ npm install`
 
-2. To initially process javascript, sass and any gulp tasks found in the gulp.js file by running the command below:<br />
+2. To run the default gulp tasks found in the gulp.js file which will initially compile and watch the svg directory, sass and javascript files as well as start the PHP server and open the site in the browser run the command below within the projects directory:<br />
 `$ gulp`
 
-3. To watch javascript, sass and any gulp tasks found in the gulp.js file by running the command below:<br />
+3. To just start the PHP server instance run the following command from within the projects directory:<br />
+`gulp connect`<br />
+`Ctrl-C` will kill the server
+
+- If issues happen with it still running refer to this article https://stackoverflow.com/questions/25608908/
+4. To watch sass, javascript and any gulp tasks found in the gulp.js file by running the command below:<br />
 `$ gulp watch`
 
-4. To add SVG’s to spritemap, drop any svg into the /src/svg folder. The name of the svg will become the id of the svg.<br />
+5. To add SVG’s to spritemap, drop any svg into the /src/svg folder. The name of the svg will become the id of the svg.<br />
 > Make any changes such as fill="currentColor" to the svg inside of the /src/svg folder and Gulp will process.
+
+If issues happen with the server instance still running refer to this article https://stackoverflow.com/questions/25608908/stopping-in-built-php-server-on-mac-mavericks-livecode
 
 ### Gulp Task File Structure:
 
