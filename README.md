@@ -40,14 +40,13 @@ Based off of [Project Build w/ Gulp.js](https://github.com/bulltonic/html-sass-g
 `gulp connect`<br />
 `Ctrl-C` will kill the server
 
-- If issues happen with it still running refer to this article https://stackoverflow.com/questions/25608908/
 4. To watch sass, javascript and any gulp tasks found in the gulp.js file by running the command below:<br />
 `$ gulp watch`
 
 5. To add SVG’s to spritemap, drop any svg into the /src/svg folder. The name of the svg will become the id of the svg.<br />
 > Make any changes such as fill="currentColor" to the svg inside of the /src/svg folder and Gulp will process.
 
-If issues happen with the server instance still running refer to this article https://stackoverflow.com/questions/25608908/stopping-in-built-php-server-on-mac-mavericks-livecode
+If issues happen with the server instance still running refer to this [article](https://stackoverflow.com/questions/25608908/stopping-in-built-php-server-on-mac-mavericks-livecode)
 
 ### Gulp Task File Structure:
 
