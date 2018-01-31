@@ -17,18 +17,6 @@
 
 	<div id="main" class="main-container"><!-- BEGIN .main-container -->
 
-		<div class="header"><!-- BEGIN .header -->
-
-			<i class="logo brand-logo">
-				
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
-					<path d="M40 1.3c-21 0-38 17-38 38s17 38 38 38 38-17 38-38-17-38-38-38zM17.1 51.9l9-23.9H31l-9 23.9h-4.9zm43.4-18.6h-7.2v18.6H47V33.3h-7l-7 18.6h-4.9l9-23.9h23.4v5.3z"/>
-				</svg> 
-
-			</i>
-
-		</div><!-- END .header -->
-
 		<?php include 'inc/introduction.php'; ?>
 
 		<?php include 'inc/interior-features.php'; ?>

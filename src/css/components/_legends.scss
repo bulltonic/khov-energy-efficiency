@@ -29,29 +29,29 @@
 			border: 3px solid $white;
 			border-radius: 100%;
 			&.orange-scheme {
-		        background: $orange;
-		    }
-		    &.green-scheme {
-		        background: $green;
-		    }
-		    &.dark-orange-scheme {
-		        background: $darkOrange;
-		    }
-		    &.magenta-scheme {
-		        background: $magenta;
-		    }
-		    &.blue-scheme {
-		        background: $blue;
-		    }
-		    &.teal-scheme {
-		        background: $teal;
-		    }
-		    &.green-scheme {
-		        background: $green;
-		    }
-		    &.purple-scheme {
-		        background: $purple;
-		    }
+				background: $orange;
+			}
+			&.green-scheme {
+				background: $green;
+			}
+			&.dark-orange-scheme {
+				background: $darkOrange;
+			}
+			&.magenta-scheme {
+				background: $magenta;
+			}
+			&.blue-scheme {
+				background: $blue;
+			}
+			&.teal-scheme {
+				background: $teal;
+			}
+			&.green-scheme {
+				background: $green;
+			}
+			&.purple-scheme {
+				background: $purple;
+			}
 		}
 		.legend-text {
 			&:before {

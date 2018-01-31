@@ -37,8 +37,8 @@
 							<span class="icon feature-icon green-scheme">
 								
 								<svg>
-			                        <use xlink:href="#icon-feature-cabinets" />
-			                    </svg>
+															<use xlink:href="#icon-feature-cabinets" />
+													</svg>
 
 							</span>
 
@@ -53,8 +53,8 @@
 							<span class="icon feature-icon orange-scheme">
 								
 								<svg>
-			                        <use xlink:href="#icon-feature-lighting" />
-			                    </svg>
+															<use xlink:href="#icon-feature-lighting" />
+													</svg>
 
 							</span>	
 
@@ -65,8 +65,8 @@
 							<span class="icon feature-icon dark-orange-scheme">
 								
 								<svg>
-			                        <use xlink:href="#icon-feature-electricity" />
-			                    </svg>
+															<use xlink:href="#icon-feature-electricity" />
+													</svg>
 
 							</span>
 
@@ -79,8 +79,8 @@
 							<span class="icon feature-icon magenta-scheme">
 								
 								<svg>
-			                        <use xlink:href="#icon-feature-flooring" />
-			                    </svg>
+															<use xlink:href="#icon-feature-flooring" />
+													</svg>
 
 							</span>
 
@@ -105,8 +105,8 @@
 							<span class="icon feature-icon blue-scheme">
 							
 								<svg>
-			                        <use xlink:href="#icon-feature-thermostat" />
-			                    </svg>
+															<use xlink:href="#icon-feature-thermostat" />
+													</svg>
 
 							</span>
 
@@ -121,8 +121,8 @@
 							<span class="icon feature-icon magenta-scheme">
 							
 								<svg>
-			                        <use xlink:href="#icon-feature-flooring" />
-			                    </svg>
+															<use xlink:href="#icon-feature-flooring" />
+													</svg>
 
 							</span>
 
@@ -133,8 +133,8 @@
 							<span class="icon feature-icon teal-scheme">
 							
 								<svg>
-			                        <use xlink:href="#icon-feature-products" />
-			                    </svg>
+															<use xlink:href="#icon-feature-products" />
+													</svg>
 
 							</span>
 
@@ -147,8 +147,8 @@
 							<span class="icon feature-icon purple-scheme">
 							
 								<svg>
-			                        <use xlink:href="#icon-feature-windows" />
-			                    </svg>
+															<use xlink:href="#icon-feature-windows" />
+													</svg>
 
 							</span>
 
@@ -171,8 +171,8 @@
 							<span class="icon feature-icon teal-scheme">
 							
 								<svg>
-			                        <use xlink:href="#icon-feature-products" />
-			                    </svg>
+															<use xlink:href="#icon-feature-products" />
+													</svg>
 
 							</span>
 
@@ -185,8 +185,8 @@
 							<span class="icon feature-icon purple-scheme">
 							
 								<svg>
-			                        <use xlink:href="#icon-feature-windows" />
-			                    </svg>
+															<use xlink:href="#icon-feature-windows" />
+													</svg>
 
 							</span>
 
@@ -199,8 +199,8 @@
 							<span class="icon feature-icon blue-scheme">
 							
 								<svg>
-			                        <use xlink:href="#icon-feature-air" />
-			                    </svg>
+															<use xlink:href="#icon-feature-air" />
+													</svg>
 
 							</span>
 
@@ -223,8 +223,8 @@
 							<span class="icon feature-icon blue-scheme">
 							
 								<svg>
-			                        <use xlink:href="#icon-feature-water" />
-			                    </svg>
+															<use xlink:href="#icon-feature-water" />
+													</svg>
 
 							</span>
 
@@ -237,8 +237,8 @@
 							<span class="icon feature-icon green-scheme">
 							
 								<svg>
-			                        <use xlink:href="#icon-feature-cabinets" />
-			                    </svg>
+															<use xlink:href="#icon-feature-cabinets" />
+													</svg>
 
 							</span>
 
@@ -253,8 +253,8 @@
 							<span class="icon feature-icon purple-scheme">
 							
 								<svg>
-			                        <use xlink:href="#icon-feature-windows" />
-			                    </svg>
+															<use xlink:href="#icon-feature-windows" />
+													</svg>
 
 							</span>
 

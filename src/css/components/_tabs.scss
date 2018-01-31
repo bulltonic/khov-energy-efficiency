@@ -29,18 +29,18 @@
 			border-top: 2px solid $grayMed;
 			border-bottom: 2px solid $grayMed;
 			width: 100%;
-    		text-align: left;
-    		appearance: none;
-    		border-radius: 0;
-    		text-transform: none;
-    		font-weight: normal;
+			text-align: left;
+			appearance: none;
+			border-radius: 0;
+			text-transform: none;
+			font-weight: normal;
 			&:hover {
 				background: $grayMed;
 			}
-    		&.active-tab {
-    			background: $gray;
-    			color: $white;
-    		}
+			&.active-tab {
+				background: $gray;
+				color: $white;
+			}
 		}
 		&:last-child {
 			border-right: 2px solid $grayMed;
@@ -204,7 +204,7 @@
 		float: left;
 		position: relative;
 		top: -1px;
-    	z-index: -1;
+		z-index: -1;
 		&:before {
 			content: "";
 			height: 1px;

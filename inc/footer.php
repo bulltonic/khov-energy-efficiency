@@ -7,10 +7,10 @@
 		<span class="button-icon">
 			
 			<svg>
-            	<use xlink:href="#icon-ui-caret-up" />
-        	</svg> 
+				<use xlink:href="#icon-ui-caret-up" />
+			</svg> 
 
-        </span>
+		</span>
 
 	</a>
 
@@ -63,9 +63,9 @@
 			</div>
 
 			<div id="footer-testimonials-content">
-	            <p class="bold" id="testimonialFooter"><span class="quote">"</span><span id="footerTestimonialTestimonial">I enjoyed the entire process from my first meeting with Jennifer on March 30, 2014 till Jon gave me the keys on September 23, 2014. Every person that I needed to speak to or connect with (design team, construction trades, concrete, landscapers, etc) all very kind and supportive. A great experience. </span>"</p>
-	            <h6 id="footerTestimonialAttribution">Customer Review from LLA - Lorain, OH</h6>
-	        </div>
+				<p class="bold" id="testimonialFooter"><span class="quote">"</span><span id="footerTestimonialTestimonial">I enjoyed the entire process from my first meeting with Jennifer on March 30, 2014 till Jon gave me the keys on September 23, 2014. Every person that I needed to speak to or connect with (design team, construction trades, concrete, landscapers, etc) all very kind and supportive. A great experience. </span>"</p>
+				<h6 id="footerTestimonialAttribution">Customer Review from LLA - Lorain, OH</h6>
+			</div>
 
 		</div>
 		

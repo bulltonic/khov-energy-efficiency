@@ -2,18 +2,19 @@
 # Mixins
 ==============================================================*/
 
-// Clearfix
-// --------------------------------------------------
-
-// Source: http://nicolasgallagher.com/micro-clearfix-hack/
-//
-// For modern browsers
-// 1. The space content is one way to avoid an Opera bug when the
-//    contenteditable attribute is included anywhere else in the document.
-//    Otherwise it causes space to appear at the top and bottom of elements
-//    that are clearfixed.
-// 2. The use of `table` rather than `block` is only necessary if using
-//    `:before` to contain the top-margins of child elements.
+// ----------------------------------------------------------------
+//  Clearfix:
+// 
+//  Source: http://nicolasgallagher.com/micro-clearfix-hack/
+// 
+// 	1.	The space content is one way to avoid an Opera bug when 
+// 			the contenteditable attribute is included anywhere else in 
+// 			the document. Otherwise it causes space to appear at the
+// 			top and bottom of elements that are clearfixed.
+// 	2.	The use of `table` rather than `block` is only necessary  
+//    	if using `:before` to contain the top-margins of child 
+// 			elements.
+// ----------------------------------------------------------------
 
 @mixin clearfix() {
 	&:before,
@@ -26,15 +27,17 @@
 	}
 }
 
+// ----------------------------------------------------------------
 // Transitions
-// --------------------------------------------------
+// ----------------------------------------------------------------
 
 @mixin trans($property, $time, $effect) {
 	transition: $property $time $effect;
 }
 
+// ----------------------------------------------------------------
 // Vertically Align
-// --------------------------------------------------
+// ----------------------------------------------------------------
 
 @mixin vertical-align {
 	position: relative;
@@ -42,8 +45,9 @@
 	transform: translateY(-50%);
 }
 
+// ----------------------------------------------------------------
 // Center Align
-// --------------------------------------------------
+// ----------------------------------------------------------------
 
 @mixin center {
 	position: relative;
@@ -52,8 +56,9 @@
 	transform: translate(-50%, -50%);
 }
 
+// ----------------------------------------------------------------
 // Horizontal Align
-// --------------------------------------------------
+// ----------------------------------------------------------------
 
 @mixin horizontal-align {
 	position: relative;
@@ -61,22 +66,25 @@
 	transform: translateX(-50%);
 }
 
+// ----------------------------------------------------------------
 // Translates
-// --------------------------------------------------
+// ----------------------------------------------------------------
 
 @mixin translate($x, $y) {
 	transform: translate($x,$y);
 }
 
+// ----------------------------------------------------------------
 // Rotates
-// --------------------------------------------------
+// ----------------------------------------------------------------
 
 @mixin rotate($deg) {
 	transform: rotate($deg);
 }
 
+// ----------------------------------------------------------------
 // Full size of parent
-// --------------------------------------------------
+// ----------------------------------------------------------------
 
 @mixin fill-parent($z) {
 	content: "";
@@ -89,8 +97,9 @@
 	z-index: $z;
 }
 
+// ----------------------------------------------------------------
 // Background Size Cover
-// --------------------------------------------------
+// ----------------------------------------------------------------
 
 @mixin background-cover($x, $y) {
 	background-size: cover;
@@ -98,17 +107,21 @@
 	background-position: $x $y;
 }
 
+// ----------------------------------------------------------------
 // Backface Visibility
-// --------------------------------------------------
+// ----------------------------------------------------------------
 
 @mixin backface ($visibility) {
 	backface-visibility: $visibility;
 }
 
+// ----------------------------------------------------------------
 // Grid System
-// --------------------------------------------------
+// ----------------------------------------------------------------
 
 // Centered container element
+// ----------------------------------------------------------------
+
 @mixin container-fixed() {
 	margin-right: auto;
 	margin-left: auto;
@@ -118,6 +131,8 @@
 }
 
 // Creates a wrapper for a series of columns
+// ----------------------------------------------------------------
+
 @mixin make-row($gutter: $grid-gutter-width) {
 	margin-left:  ($gutter / -2);
 	margin-right: ($gutter / -2);
@@ -125,6 +140,8 @@
 }
 
 // Generate the extra small columns
+// ----------------------------------------------------------------
+
 @mixin make-xs-column($columns, $gutter: $grid-gutter-width) {
 	position: relative;
 	float: left;
@@ -137,6 +154,8 @@
 }
 
 // Generate the small columns
+// ----------------------------------------------------------------
+
 @mixin make-sm-column($columns, $gutter: $grid-gutter-width) {
 	position: relative;
 	// Prevent columns from collapsing when empty
@@ -152,6 +171,8 @@
 }
 
 // Generate the small column offsets
+// ----------------------------------------------------------------
+
 @mixin make-sm-column-offset($columns) {
 	@media (min-width: $screen-sm) {
 		margin-left: percentage(($columns / $grid-columns));
@@ -169,6 +190,8 @@
 }
 
 // Generate the medium columns
+// ----------------------------------------------------------------
+
 @mixin make-md-column($columns, $gutter: $grid-gutter-width) {
 	position: relative;
 	// Prevent columns from collapsing when empty
@@ -184,6 +207,8 @@
 }
 
 // Generate the large column offsets
+// ----------------------------------------------------------------
+
 @mixin make-md-column-offset($columns) {
 	@media (min-width: $screen-md) {
 		margin-left: percentage(($columns / $grid-columns));
@@ -201,6 +226,8 @@
 }
 
 // Generate the large columns
+// ----------------------------------------------------------------
+
 @mixin make-lg-column($columns, $gutter: $grid-gutter-width) {
 	position: relative;
 	// Prevent columns from collapsing when empty
@@ -216,6 +243,8 @@
 }
 
 // Generate the large column offsets
+// ----------------------------------------------------------------
+
 @mixin make-lg-column-offset($columns) {
 	@media (min-width: $screen-lg) {
 		margin-left: percentage(($columns / $grid-columns));
@@ -232,8 +261,9 @@
 	}
 }
 
+// ----------------------------------------------------------------
 // Responsive breakpoints
-// --------------------------------------------------
+// ----------------------------------------------------------------
 
 @mixin break($media) {
 	@if $media == small {
@@ -257,8 +287,9 @@
 	}
 }
 
+// ----------------------------------------------------------------
 // Mobile first responsive breakpoints
-// --------------------------------------------------
+// ----------------------------------------------------------------
 
 @mixin breakFirst($media) {
 	@if $media == medium {

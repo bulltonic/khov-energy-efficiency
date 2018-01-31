@@ -6,17 +6,17 @@
 
 			<div class="col-sm-12"><!-- BEGIN .col-sm-12 -->
 
-				<div class="component introduction-component">
+				<div class="component introduction-component"><!-- BEGIN .introduction-component -->
 
 					<h2>Energy Efficiency &amp; Healthy Home Media Gallery</h2>
 
-				</div>
+				</div><!-- END .introduction-component -->
 
-			</div>
+			</div><!-- END .col-sm-12 -->
 
-		</div>
+		</div><!-- END .row -->
 
-	</div>
+	</div><!-- END .container -->
 
 	<div class="container"><!-- BEGIN .container -->
 
@@ -24,383 +24,97 @@
 
 			<div class="col-sm-12"><!-- BEGIN .col-sm-12 -->
 
-				<div class="component grid-component">
+				<div class="component grid-component"><!-- BEGIN .grid-component -->
 					
-					<div class="grid-container cf">
+					<div class="grid-container cf"><!-- BEGIN .grid-container -->
 
-						<div class="grid-row-wrapper">
+						<div class="grid-row-wrapper"><!-- BEGIN .grid-row-wrapper -->
 
-							<div class="grid-column column-1 column-md-1 column-lg-2">
+							<div class="grid-column column-1 column-md-1 column-lg-2"><!-- BEGIN .grid-column -->
 								
-								<div class="grid-item">
-									
-									<div class="grid-item-content">
-
-										<div class="content-icon">
-
-											<svg>
-						                        <use xlink:href="#icon-ui-play-button" />
-						                    </svg>
-											
-										</div>
-
-										<div class="content-details">
-
-											<h4>Your K. Hovnanian <sup>&reg;</sup> Energy Efficient Home</h4>
-											<span class="tag green-scheme">Engery Efficiency</span>
-											<span class="tag teal-scheme">Healthy Home</span>
-
-										</div>
-
-									</div>
-
-									<div class="grid-item-background" style="background-image: url('img/carousels/kitchen.jpg');"></div>
-
-								</div>
+								<?php include('grid-items/grid-item-one.php') ?>
 								
+							</div><!-- END .grid-column -->
+
+							<div class="grid-column column-1 column-md-2 column-lg-1 split-column"><!-- BEGIN .grid-column -->
+
+								<?php include('grid-items/grid-item-two.php') ?>
+
+								<?php include('grid-items/grid-item-three.php') ?>
 								
-							</div>
-
-							<div class="grid-column column-1 column-md-2 column-lg-1 split-column">
-
-								<div class="grid-item">
-
-									<div class="grid-item-content">
-
-										<div class="content-icon">
-
-											<svg>
-						                        <use xlink:href="#icon-ui-play-button" />
-						                    </svg>
-											
-										</div>
-
-										<div class="content-details">
-
-											<h4>Healthy Building Products</h4>
-											<span class="tag green-scheme">Engery Efficiency</span>
-
-										</div>
-
-									</div>
-
-									<div class="grid-item-background" style="background-image: url('img/carousels/great-room.jpg');"></div>
-
-								</div>
-
-								<div class="grid-item">
-
-									<div class="grid-item-content">
-
-										<div class="content-icon">
-
-											<svg>
-						                        <use xlink:href="#icon-ui-camera" />
-						                    </svg>
-											
-										</div>
-
-										<div class="content-details">
-
-											<h4>High Efficiency Appliances</h4>
-											<span class="tag purple-scheme">Healthy Home</span>
-
-										</div>
-
-									</div>
-									
-									<div class="grid-item-background" style="background-image: url('img/carousels/living-room.jpg');"></div>
-
-								</div>
-								
-							</div>
+							</div><!-- END .grid-column -->
 							
-						</div>
+						</div><!-- END .grid-row-wrapper -->
 
-						<div class="grid-row-wrapper">
+						<div class="grid-row-wrapper"><!-- BEGIN .grid-row-wrapper -->
 
-							<div class="grid-column column-1">
+							<div class="grid-column column-1"><!-- BEGIN .grid-column -->
 								
-								<div class="grid-item">
-									
-									<div class="grid-item-content">
-
-										<div class="content-icon">
-
-											<svg>
-						                        <use xlink:href="#icon-ui-camera" />
-						                    </svg>
-											
-										</div>
-
-										<div class="content-details">
-
-											<h4>High Efficiency Windows</h4>
-											<span class="tag blue-scheme">Healthy Home</span>
-
-										</div>
-
-									</div>
-
-									<div class="grid-item-background" style="background-image: url('img/carousels/kitchen.jpg');"></div>
-
-								</div>
+								<?php include('grid-items/grid-item-four.php') ?>
 								
+							</div><!-- END .grid-column -->
+
+							<div class="grid-column column-1"><!-- BEGIN .grid-column -->
 								
-							</div>
-
-							<div class="grid-column column-1">
+								<?php include('grid-items/grid-item-five.php') ?>
 								
-								<div class="grid-item">
-									
-									<div class="grid-item-content">
+							</div><!-- END .grid-column -->
 
-										<div class="content-icon">
-
-											<svg>
-						                        <use xlink:href="#icon-ui-play-button" />
-						                    </svg>
-											
-										</div>
-										
-										<div class="content-details">
-
-											<h4>High Efficiency Heating and Cooling</h4>
-											<span class="tag orange-scheme">Engery Efficiency</span>
-
-										</div>
-
-									</div>
-
-									<div class="grid-item-background" style="background-image: url('img/carousels/great-room.jpg');"></div>
-
-								</div>
+							<div class="grid-column column-1"><!-- BEGIN .grid-column -->
 								
+								<?php include('grid-items/grid-item-six.php') ?>
 								
-							</div>
-
-							<div class="grid-column column-1">
-								
-								<div class="grid-item">
-									
-									<div class="grid-item-content">
-
-										<div class="content-icon">
-
-											<svg>
-						                        <use xlink:href="#icon-ui-camera" />
-						                    </svg>
-											
-										</div>
-										
-										<div class="content-details">
-
-											<h4>Eco-Friendly Flooring</h4>
-											<span class="tag teal-scheme">Engery Efficiency</span>
-
-										</div>
-
-									</div>
-
-									<div class="grid-item-background" style="background-image: url('img/carousels/bathroom.jpg');"></div>
-
-								</div>
-								
-								
-							</div>
+							</div><!-- END .grid-column -->
 							
-						</div>
+						</div><!-- END .grid-row-wrapper -->
 
-					</div>
+					</div><!-- END .grid-container -->
 
-					<div class="grid-container cf">
+					<div class="grid-container cf"><!-- BEGIN .grid-container -->
 
-						<div class="grid-row-wrapper disabled-row">
+						<div class="grid-row-wrapper disabled-row"><!-- BEGIN .grid-row-wrapper.disabled-row -->
 
-							<div class="grid-column column-1">
+							<div class="grid-column column-1"><!-- BEGIN .grid-column -->
 								
-								<div class="grid-item">
-									
-									<div class="grid-item-content">
-
-										<div class="content-icon">
-
-											<svg>
-						                        <use xlink:href="#icon-ui-play-button" />
-						                    </svg>
-											
-										</div>
-										
-										<div class="content-details">
-
-											<h4>High Efficiency Heating and Cooling</h4>
-											<span class="tag yellow-green-scheme">Engery Efficiency</span>
-
-										</div>
-
-									</div>
-
-									<div class="grid-item-background" style="background-image: url('img/carousels/kitchen-alternate.jpg');"></div>
-
-								</div>
+								<?php include('grid-items/grid-item-one.php') ?>
 								
+							</div><!-- END .grid-column -->
+
+							<div class="grid-column column-1"><!-- BEGIN .grid-column -->
 								
-							</div>
-
-							<div class="grid-column column-1">
+								<?php include('grid-items/grid-item-three.php') ?>
 								
-								<div class="grid-item">
-									
-									<div class="grid-item-content">
+							</div><!-- END .grid-column -->
 
-										<div class="content-icon">
-
-											<svg>
-						                        <use xlink:href="#icon-ui-camera" />
-						                    </svg>
-											
-										</div>
-										
-										<div class="content-details">
-
-											<h4>High Efficiency Windows</h4>
-											<span class="tag blue-scheme">Healthy Home</span>
-											<span class="tag orange-scheme">Engery Efficiency</span>
-
-										</div>
-
-									</div>
-
-									<div class="grid-item-background" style="background-image: url('img/carousels/kitchen.jpg');"></div>
-
-								</div>
+							<div class="grid-column column-1"><!-- BEGIN .grid-column -->
 								
-							</div>
-
-							<div class="grid-column column-1">
+								<?php include('grid-items/grid-item-four.php') ?>
 								
-								<div class="grid-item">
-									
-									<div class="grid-item-content">
-
-										<div class="content-icon">
-
-											<svg>
-						                        <use xlink:href="#icon-ui-camera" />
-						                    </svg>
-											
-										</div>
-										
-										<div class="content-details">
-
-											<h4>Eco-Friendly Flooring</h4>
-											<span class="tag red-scheme">Engery Efficiency</span>
-
-										</div>
-
-									</div>
-
-									<div class="grid-item-background" style="background-image: url('img/carousels/bathroom.jpg');"></div>
-
-								</div>
-								
-								
-							</div>
+							</div><!-- END .grid-column -->
 							
-						</div>
+						</div><!-- END .grid-row-wrapper.disabled-row -->
 
-						<div class="grid-row-wrapper disabled-row">
+						<div class="grid-row-wrapper disabled-row"><!-- BEGIN .grid-row-wrapper.disabled-row -->
 
-							<div class="grid-column column-1 column-md-1 column-lg-2">
+							<div class="grid-column column-1 column-md-1 column-lg-2"><!-- BEGIN .grid-column -->
 								
-								<div class="grid-item">
-									
-									<div class="grid-item-content">
-
-										<div class="content-icon">
-
-											<svg>
-						                        <use xlink:href="#icon-ui-play-button" />
-						                    </svg>
-											
-										</div>
-
-										<div class="content-details">
-
-											<h4>Your K. Hovnanian <sup>&reg;</sup> Energy Efficient Home</h4>
-											<span class="tag green-scheme">Engery Efficiency</span>
-											<span class="tag teal-scheme">Healthy Home</span>
-
-										</div>
-
-									</div>
-
-									<div class="grid-item-background" style="background-image: url('img/carousels/kitchen.jpg');"></div>
-
-								</div>
+								<?php include('grid-items/grid-item-six.php') ?>
 								
+							</div><!-- END .grid-column -->
+
+							<div class="grid-column column-1 column-md-2 column-lg-1 split-column"><!-- BEGIN .grid-column -->
+
+								<?php include('grid-items/grid-item-five.php') ?>
+
+								<?php include('grid-items/grid-item-one.php') ?>
 								
-							</div>
-
-							<div class="grid-column column-1 column-md-2 column-lg-1 split-column">
-
-								<div class="grid-item">
-
-									<div class="grid-item-content">
-
-										<div class="content-icon">
-
-											<svg>
-						                        <use xlink:href="#icon-ui-play-button" />
-						                    </svg>
-											
-										</div>
-
-										<div class="content-details">
-
-											<h4>Healthy Building Products</h4>
-											<span class="tag green-scheme">Engery Efficiency</span>
-
-										</div>
-
-									</div>
-
-									<div class="grid-item-background" style="background-image: url('img/carousels/great-room.jpg');"></div>
-
-								</div>
-
-								<div class="grid-item">
-
-									<div class="grid-item-content">
-
-										<div class="content-icon">
-
-											<svg>
-						                        <use xlink:href="#icon-ui-camera" />
-						                    </svg>
-											
-										</div>
-
-										<div class="content-details">
-
-											<h4>High Efficiency Appliances</h4>
-											<span class="tag purple-scheme">Healthy Home</span>
-
-										</div>
-
-									</div>
-									
-									<div class="grid-item-background" style="background-image: url('img/carousels/living-room.jpg');"></div>
-
-								</div>
-								
-							</div>
+							</div><!-- END .grid-column -->
 							
-						</div>
+						</div><!-- END .grid-row-wrapper.disabled-row -->
 
-					</div>
+					</div><!-- END .grid-container -->
 
-					<div class="view-option-container">
+					<div class="view-option-container"><!-- BEGIN .view-option-container -->
 						
 						<a href="#" class="button gray-color">
 							
@@ -409,26 +123,26 @@
 							<span class="button-icon">
 								
 								<svg>
-					            	<use xlink:href="#icon-ui-caret-down" />
-					        	</svg> 
+										<use xlink:href="#icon-ui-caret-down" />
+								</svg> 
 
-					        </span>
+							</span>
 
 						</a>
 
-					</div>
+					</div><!-- END .view-option-container -->
 
-				</div>
+				</div><!-- END .grid-component -->
 
-			</div>
+			</div><!-- END .col-sm-12 -->
 
-		</div>
+		</div><!-- END .row -->
 
-	</div>
+	</div><!-- END .container -->
 	
 </div><!-- END #media-gallery -->
 
-<div class="media-carousel modal-carousel">
+<div class="media-carousel modal-carousel"><!-- BEGIN .modal-carousel -->
 
 	<div class="component carousel-component"><!-- BEGIN .carousel-component -->
 
@@ -440,21 +154,23 @@
 
 					<div class="carousel-container"><!-- BEGIN .carousel-container -->
 
-						<div class="arrow-wrapper previous-arrow">
+						<div class="arrow-wrapper previous-arrow"><!-- BEGIN .previous-arrow -->
 							
-							<button class="arrow">
+							<button class="arrow"><!-- BEGIN .arrow -->
 
-								<span class="icon ui-icon">
+								<span class="icon ui-icon"><!-- BEGIN .ui-icon -->
+									
 									<svg>
-				                        <use xlink:href="#icon-ui-caret-left" />
-				                    </svg> 
-								</span>
+											<use xlink:href="#icon-ui-caret-left" />
+									</svg>
+
+								</span><!-- BEGIN .ui-icon -->
 								
-							</button>
+							</button><!-- END .arrow -->
 
-						</div>
+						</div><!-- END .previous-arrow -->
 
-						<div class="slides-wrapper">
+						<div class="slides-wrapper"><!-- BEGIN .slides-wrapper -->
 
 							<?php include('slides/image-slide-kitchen.php') ?>
 							
@@ -480,16 +196,18 @@
 
 							<?php include('slides/image-slide-bathroom.php') ?>
 
-						</div>
+						</div><!-- END .slides-wrapper -->
 
 						<div class="arrow-wrapper next-arrow">
 							
 							<button href="#" class="arrow">
 
 								<span class="icon ui-icon">
+									
 									<svg>
-				                        <use xlink:href="#icon-ui-caret-right" />
-				                    </svg> 
+											<use xlink:href="#icon-ui-caret-right" />
+									</svg>
+
 								</span>
 								
 							</button>
@@ -499,9 +217,11 @@
 						<a href="#" class="close-button">
 							
 							<span class="icon ui-icon">
+								
 								<svg>
-			                        <use xlink:href="#icon-ui-cancel" />
-			                    </svg> 
+										<use xlink:href="#icon-ui-cancel" />
+								</svg>
+
 							</span>
 
 						</a>
@@ -514,8 +234,8 @@
 
 		</div>	
 
-	</div>
+	</div><!-- END .carousel-component -->
 
 	<div class="section-overlay"></div>
 
-</div>	
+</div>	<!-- END .modal-carousel -->

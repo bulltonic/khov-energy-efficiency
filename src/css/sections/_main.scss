@@ -21,34 +21,34 @@ body.open {
 	overflow: hidden;
 }
 .main-container {
-    left: 0;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transition: .3s all ease;
-    &:after {
-    	content: "";
-    	display: block;
-    	top: 0;
-    	left: 0;
-    	z-index: 1;
-    	width: 100%;
-    	height: 100%;
-    	position: fixed;
-    	background-color: rgba(0, 0, 0, 0.3);
-    	opacity: 0;
-    	visibility: hidden;
-    }
-    @include breakFirst(wide) {
-    	padding-left: 234px;
-    }
-    &.open {
-    	padding-left: 234px;
-    	&:after {
-    		opacity: 1;
-    		visibility: visible;
-    	}
-    }
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	transition: .3s all ease;
+	&:after {
+		content: "";
+		display: block;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		background-color: rgba(0, 0, 0, 0.3);
+		opacity: 0;
+		visibility: hidden;
+	}
+	@include breakFirst(wide) {
+		padding-left: 234px;
+	}
+	&.open {
+		padding-left: 234px;
+		&:after {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
 }
 .introduction-section,
 .exterior-features-section {

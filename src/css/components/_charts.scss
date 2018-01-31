@@ -7,159 +7,159 @@
 --------------------------------------------------------------*/
 
 .pie-chart {
-   position: relative;
-   display: inline-block;
-   svg {
-      width: 150px; 
-      height: 150px;
-      transform: rotate(-90deg);
-      border-radius: 50%;
-      display: block;
-      margin: 0 auto;
-   }
-   circle {
-      fill: $grayMed;
-      stroke: $black;
-      stroke-width: 16;
-      transition: 1s $cbTrans all;
-   }
-   &.green-scheme {
-      circle {
-         stroke: $green;
-      }
-   }
-   &.red-scheme {
-      circle {
-         stroke: $red;
-      }
-   }
-   &.orange-scheme {
-      circle {
-         stroke: $orange;
-      }
-   }
-   &:after {
-      position: absolute;
-      height: 80px;
-      width: 80px;
-      background: $white;
-      content: "";
-      display: block;
-      border-radius: 100%;
-      top: 50%;
-      left: 50%;
-      z-index: 5;
-      transform: translate(-50%, -50%);
-   }
+	position: relative;
+	display: inline-block;
+	svg {
+		width: 150px; 
+		height: 150px;
+		transform: rotate(-90deg);
+		border-radius: 50%;
+		display: block;
+		margin: 0 auto;
+	}
+	circle {
+		fill: $grayMed;
+		stroke: $black;
+		stroke-width: 16;
+		transition: 1s $cbTrans all;
+	}
+	&.green-scheme {
+		circle {
+			 stroke: $green;
+		}
+	}
+	&.red-scheme {
+		circle {
+			 stroke: $red;
+		}
+	}
+	&.orange-scheme {
+		circle {
+			 stroke: $orange;
+		}
+	}
+	&:after {
+		position: absolute;
+		height: 80px;
+		width: 80px;
+		background: $white;
+		content: "";
+		display: block;
+		border-radius: 100%;
+		top: 50%;
+		left: 50%;
+		z-index: 5;
+		transform: translate(-50%, -50%);
+	}
 }
 
 .bar-chart {
-  position: relative;
-  display: block;
-  background: $grayMed;
-  margin: 10px 0;
-  vertical-align: middle;
-  @include breakFirst(medium) {
-    width: 84%;
-    width: calc(100% - 105px);
-    display: inline-block;
-  }
-  svg {
-    width: 100%; 
-    height: 35px;
-    display: block;
-    margin: 0 auto;
-    @include breakFirst(medium) {
-      height: 50px;
-    }
-  }
-  rect {
-    transition: 1s $cbTrans all;
-  }
-  &.green-scheme {
-    rect {
-      fill: $green;
-    }
-    .bar-value-text {
-      color: $green;
-    }
-  }
-  &.yellow-green-scheme {
-    rect {
-      fill: $yellowGreen;
-    }
-    .bar-value-text {
-      color: $yellowGreen;
-    }
-  }
-  &.red-scheme {
-    rect {
-      fill: $red;
-    }
-    .bar-value-text {
-      color: $red;
-    }
-  }
-  &.orange-scheme {
-    rect {
-      fill: $orange;
-    }
-    .bar-value-text {
-      color: $orange;
-    }
-  }
-  &.dark-orange-scheme {
-    rect {
-      fill: $darkOrange;
-    }
-    .bar-value-text {
-      color: $darkOrange;
-    }
-  }
-  .bar-value-text {
-    content: attr(data-chart-cost);
-    position: absolute;
-    top: 50%;
-    padding: 0 10px;
-    transform: translate3d(0, -50%, 0);
-    left: 0;
-    font-size: 12px;
-    transition: 1s $cbTrans all;
-    @include breakFirst(medium) {
-      font-size: 16px;
-    }
-  }
+	position: relative;
+	display: block;
+	background: $grayMed;
+	margin: 10px 0;
+	vertical-align: middle;
+	@include breakFirst(medium) {
+		width: 84%;
+		width: calc(100% - 105px);
+		display: inline-block;
+	}
+	svg {
+		width: 100%; 
+		height: 35px;
+		display: block;
+		margin: 0 auto;
+		@include breakFirst(medium) {
+			height: 50px;
+		}
+	}
+	rect {
+		transition: 1s $cbTrans all;
+	}
+	&.green-scheme {
+		rect {
+			fill: $green;
+		}
+		.bar-value-text {
+			color: $green;
+		}
+	}
+	&.yellow-green-scheme {
+		rect {
+			fill: $yellowGreen;
+		}
+		.bar-value-text {
+			color: $yellowGreen;
+		}
+	}
+	&.red-scheme {
+		rect {
+			fill: $red;
+		}
+		.bar-value-text {
+			color: $red;
+		}
+	}
+	&.orange-scheme {
+		rect {
+			fill: $orange;
+		}
+		.bar-value-text {
+			color: $orange;
+		}
+	}
+	&.dark-orange-scheme {
+		rect {
+			fill: $darkOrange;
+		}
+		.bar-value-text {
+			color: $darkOrange;
+		}
+	}
+	.bar-value-text {
+		content: attr(data-chart-cost);
+		position: absolute;
+		top: 50%;
+		padding: 0 10px;
+		transform: translate3d(0, -50%, 0);
+		left: 0;
+		font-size: 12px;
+		transition: 1s $cbTrans all;
+		@include breakFirst(medium) {
+			font-size: 16px;
+		}
+	}
 }
 .bar-label {
-  display: block;
-  font-size: 12px;
-  line-height: 125%;
-  @include breakFirst(medium) {
-    width: 15%;
-    width: calc(100px);
-    text-align: right;
-    display: inline-block;
-    vertical-align: middle;
-    padding: 0 5px 0 0;
-  }
+	display: block;
+	font-size: 12px;
+	line-height: 125%;
+	@include breakFirst(medium) {
+		width: 15%;
+		width: calc(100px);
+		text-align: right;
+		display: inline-block;
+		vertical-align: middle;
+		padding: 0 5px 0 0;
+	}
 }
 .chart-footer {
-  text-transform: uppercase;
-  padding: 10px 5px;
-  p {
-    margin: 0;
-    vertical-align: middle;
-    line-height: 20px;
-    font-size: 14px;
-  }
-  &:hover {
-    cursor: pointer;
-    .tool-tip {
-      &:before,
-      &:after {
-        opacity: 1;
-        visibility: visible;
-      }
-    }
-  }
+	text-transform: uppercase;
+	padding: 10px 5px;
+	p {
+		margin: 0;
+		vertical-align: middle;
+		line-height: 20px;
+		font-size: 14px;
+	}
+	&:hover {
+		cursor: pointer;
+		.tool-tip {
+			&:before,
+			&:after {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
 }

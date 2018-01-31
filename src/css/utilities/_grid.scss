@@ -2,22 +2,26 @@
 # Grid system
 ==============================================================*/
 
+// ----------------------------------------------------------------
+// Set the container width, and override it for fixed 
+// navbars in media queries
+// ----------------------------------------------------------------
 
-// Set the container width, and override it for fixed navbars in media queries
-// --------------------------------------------------
 .container {
 	@include container-fixed();
 }
 
+// ----------------------------------------------------------------
 // Mobile first defaults
-// --------------------------------------------------
+// ----------------------------------------------------------------
 
 .row {
 	@include make-row();
 }
 
+// ----------------------------------------------------------------
 // Common styles for small and large grid columns
-// --------------------------------------------------
+// ----------------------------------------------------------------
 
 .col-xs-1,
 .col-xs-2,
@@ -68,22 +72,21 @@
 .col-lg-11,
 .col-lg-12 {
 	position: relative;
-	// Prevent columns from collapsing when empty
 	min-height: 1px;
-	// Inner gutter via padding
 	padding-left:  ($grid-gutter-width / 2);
 	padding-right: ($grid-gutter-width / 2);
 }
 
-
-// Extra small grid
-// --------------------------------------------------
-
-// Grid classes for extra small devices like smartphones. No offset, push, or
-// pull classes are present here due to the size of the target.
+// ----------------------------------------------------------------
+// Extra small grid:
 //
-// Note that `.col-xs-12` doesn't get floated on purpose—there's no need since
-// it's full-width.
+// Grid classes for extra small devices like smartphones. 
+// No offset, push, or pull classes are present here due to the 
+// size of the target.
+// 
+// Note that `.col-xs-12` doesn't get floated on purpose—there's 
+// no need sinceit's full-width.
+// ----------------------------------------------------------------
 
 .col-xs-1,
 .col-xs-2,
@@ -111,15 +114,15 @@
 .col-xs-11 { width: percentage((11/ $grid-columns)); }
 .col-xs-12 { width: 100%; }
 
-
-// Small grid
-// --------------------------------------------------
-
-// Columns, offsets, pushes, and pulls for the small device range, from phones
-// to tablets.
+// ----------------------------------------------------------------
+// Small grid:
 //
-// Note that `.col-sm-12` doesn't get floated on purpose—there's no need since
-// it's full-width.
+// Columns, offsets, pushes, and pulls for the small device 
+// range, from phones to tablets.
+//
+// Note that `.col-sm-12` doesn't get floated on purpose—there's 
+// no need since it's full-width.
+// ----------------------------------------------------------------
 
 @media (min-width: $screen-tablet) {
 	.container {
@@ -152,7 +155,10 @@
 	.col-sm-11 { width: percentage((11/ $grid-columns)); }
 	.col-sm-12 { width: 100%; }
 
+	// ----------------------------------------------------------------
 	// Push and pull columns for source order changes
+	// ----------------------------------------------------------------
+
 	.col-sm-push-1  { left: percentage((1 / $grid-columns)); }
 	.col-sm-push-2  { left: percentage((2 / $grid-columns)); }
 	.col-sm-push-3  { left: percentage((3 / $grid-columns)); }
@@ -177,7 +183,10 @@
 	.col-sm-pull-10 { right: percentage((10/ $grid-columns)); }
 	.col-sm-pull-11 { right: percentage((11/ $grid-columns)); }
 
+	// ----------------------------------------------------------------
 	// Offsets
+	// ----------------------------------------------------------------
+
 	.col-sm-offset-1  { margin-left: percentage((1 / $grid-columns)); }
 	.col-sm-offset-2  { margin-left: percentage((2 / $grid-columns)); }
 	.col-sm-offset-3  { margin-left: percentage((3 / $grid-columns)); }
@@ -191,14 +200,15 @@
 	.col-sm-offset-11 { margin-left: percentage((11/ $grid-columns)); }
 }
 
-
-// Medium grid
-// --------------------------------------------------
-
-// Columns, offsets, pushes, and pulls for the desktop device range.
+// ----------------------------------------------------------------
+// Medium grid:
 //
-// Note that `.col-md-12` doesn't get floated on purpose—there's no need since
-// it's full-width.
+// Columns, offsets, pushes, and pulls for the desktop 
+// device range.
+//
+// Note that `.col-md-12` doesn't get floated on purpose—there's 
+// no need since it's full-width.
+// ----------------------------------------------------------------
 
 @media (min-width: $screen-desktop) {
 	.container {
@@ -230,7 +240,10 @@
 	.col-md-11 { width: percentage((11/ $grid-columns)); }
 	.col-md-12 { width: 100%; }
 
+	// ----------------------------------------------------------------
 	// Push and pull columns for source order changes
+	// ----------------------------------------------------------------
+
 	.col-md-push-0  { left: auto; }
 	.col-md-push-1  { left: percentage((1 / $grid-columns)); }
 	.col-md-push-2  { left: percentage((2 / $grid-columns)); }
@@ -257,7 +270,10 @@
 	.col-md-pull-10 { right: percentage((10/ $grid-columns)); }
 	.col-md-pull-11 { right: percentage((11/ $grid-columns)); }
 
+	// ----------------------------------------------------------------
 	// Offsets
+	// ----------------------------------------------------------------
+
 	.col-md-offset-0  { margin-left: 0; }
 	.col-md-offset-1  { margin-left: percentage((1 / $grid-columns)); }
 	.col-md-offset-2  { margin-left: percentage((2 / $grid-columns)); }
@@ -272,13 +288,15 @@
 	.col-md-offset-11 { margin-left: percentage((11/ $grid-columns)); }
 }
 
-
-// Large grid
+// ----------------------------------------------------------------
+// Large grid:
 //
-// Columns, offsets, pushes, and pulls for the large desktop device range.
+// Columns, offsets, pushes, and pulls for the large desktop
+// device range.
 //
-// Note that `.col-lg-12` doesn't get floated on purpose—there's no need since
-// it's full-width.
+// Note that `.col-lg-12` doesn't get floated on purpose—there's 
+// no need since it's full-width.
+// ----------------------------------------------------------------
 
 @media (min-width: $screen-lg-desktop) {
 	.container {
@@ -311,7 +329,10 @@
 	.col-lg-11 { width: percentage((11/ $grid-columns)); }
 	.col-lg-12 { width: 100%; }
 
+	// ----------------------------------------------------------------
 	// Push and pull columns for source order changes
+	// ----------------------------------------------------------------
+
 	.col-lg-push-0  { left: auto; }
 	.col-lg-push-1  { left: percentage((1 / $grid-columns)); }
 	.col-lg-push-2  { left: percentage((2 / $grid-columns)); }
@@ -338,7 +359,10 @@
 	.col-lg-pull-10 { right: percentage((10/ $grid-columns)); }
 	.col-lg-pull-11 { right: percentage((11/ $grid-columns)); }
 
+	// ----------------------------------------------------------------
 	// Offsets
+	// ----------------------------------------------------------------
+
 	.col-lg-offset-0  { margin-left: 0; }
 	.col-lg-offset-1  { margin-left: percentage((1 / $grid-columns)); }
 	.col-lg-offset-2  { margin-left: percentage((2 / $grid-columns)); }

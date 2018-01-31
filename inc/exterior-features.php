@@ -43,8 +43,8 @@
 						<span class="icon feature-icon teal-scheme">
 							
 							<svg>
-		                        <use xlink:href="#icon-feature-irrigation" />
-		                    </svg> 
+								<use xlink:href="#icon-feature-irrigation" />
+							</svg> 
 
 						</span>
 
@@ -57,8 +57,8 @@
 						<span class="icon feature-icon magenta-scheme">
 
 							<svg>
-		                        <use xlink:href="#icon-feature-heating-and-cooling" />
-		                    </svg> 
+								<use xlink:href="#icon-feature-heating-and-cooling" />
+							</svg> 
 
 						</span>
 
@@ -71,8 +71,8 @@
 						<span class="icon feature-icon green-scheme">
 
 							<svg>
-		                        <use xlink:href="#icon-feature-roof" />
-		                    </svg>
+								<use xlink:href="#icon-feature-roof" />
+							</svg>
 
 						</span>
 

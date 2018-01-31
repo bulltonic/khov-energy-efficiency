@@ -3,101 +3,101 @@
 ==============================================================*/
 
 .footer {
-    background-color: #f8f8f8;
-    &:after {
-    	content: "";
-    	display: table;
-    	clear: both;
+	background-color: #f8f8f8;
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
 	}
-   	.footerContainer {
-    	width: 90%;
-    	margin: 0 auto;
+	.footerContainer {
+		width: 90%;
+		margin: 0 auto;
 	}
-    .threeCol {
-	    padding-top: 100px;
-	    margin-bottom: 100px;
-	    width: 100%;
-	    h4 {
-		    color: #232323;
-		    font: 400 18px/24px "Raleway", sans-serif;
-		    padding-left: 8%;
-		    padding-bottom: 15px;
-		    text-transform: uppercase;
-		    letter-spacing: 2px;
-		    border-bottom: solid 1px #dfdfdf;
-		    clear: none;
-		    a {
-		    	color: inherit;
-    			text-decoration: none;	
-		    }
+	.threeCol {
+		padding-top: 100px;
+		margin-bottom: 100px;
+		width: 100%;
+		h4 {
+			color: #232323;
+			font: 400 18px/24px "Raleway", sans-serif;
+			padding-left: 8%;
+			padding-bottom: 15px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			border-bottom: solid 1px #dfdfdf;
+			clear: none;
+			a {
+				color: inherit;
+				text-decoration: none;	
+			}
 		}
-	 	ul {
-		    margin-top: 15px;
-		    padding-left: 8%;
-		    li {
-		    	margin-top: 4px;
-		    	a {
-		    		color: #232323;
-    				font: 400 16px/24px "Raleway", sans-serif;
-    				text-decoration: none;
-		    	}
-		    }
+		ul {
+			margin-top: 15px;
+			padding-left: 8%;
+			li {
+				margin-top: 4px;
+				a {
+					color: #232323;
+					font: 400 16px/24px "Raleway", sans-serif;
+					text-decoration: none;
+				}
+			}
 		}
 		.seeAll {
-		    color: #989898;
-		    padding-right: 8%;
-		    margin-top: 4px;
-		    float: right;
-		    text-decoration: none;
-		    font: 400 16px/24px "Raleway", sans-serif;
+			color: #989898;
+			padding-right: 8%;
+			margin-top: 4px;
+			float: right;
+			text-decoration: none;
+			font: 400 16px/24px "Raleway", sans-serif;
 		}
 	}
 	.footerQuestions,
 	.footerCorporate {
-    	width: 16%;
+		width: 16%;
 	}
 	.footerQuestions, 
 	.footerCorporate, 
 	.footerTestimonials {
-	    float: left;
-	    margin-left: 8%;
+		float: left;
+		margin-left: 8%;
 	}
 	.footerTestimonials {
-    	width: 36%;
-    	font-weight: normal;
-    	h6 {
+		width: 36%;
+		font-weight: normal;
+		h6 {
 			padding-right: 8%;
 			text-align: right;
 			font: 14px/16px "Raleway", sans-serif;
 			color: #2d2d2d;
 			margin-top: 15px
-    	}
-    }
-    .clearBelowDiv {
-	    clear: both;
+		}
+	}
+	.clearBelowDiv {
+		clear: both;
 	}
 	.socialIcons {
-	    margin-bottom: 50px;
-	    padding: 20px 0;
-	    border-bottom: solid 1px #dfdfdf;
-	    border-top: solid 1px #dfdfdf;
-	    text-align: center;
-	    li {
+		margin-bottom: 50px;
+		padding: 20px 0;
+		border-bottom: solid 1px #dfdfdf;
+		border-top: solid 1px #dfdfdf;
+		text-align: center;
+		li {
 			display: inline;
 			margin-right: 25px;
-	    }
+		}
 	}
 	.termsConditions {
-    	margin-bottom: 50px;
-    	text-align: center;
-    	p {
-    		color: #9e9e9e;
-    		font: 14px/24px "Raleway", sans-serif;
-    		a {
-    			color: #9e9e9e;
-    			text-decoration: none;
-    		}
-    	}
+		margin-bottom: 50px;
+		text-align: center;
+		p {
+			color: #9e9e9e;
+			font: 14px/24px "Raleway", sans-serif;
+			a {
+				color: #9e9e9e;
+				text-decoration: none;
+			}
+		}
 	}
 }
 

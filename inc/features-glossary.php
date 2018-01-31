@@ -46,8 +46,8 @@
 
 									<span class="icon ui-icon">
 										<svg>
-					                        <use xlink:href="#icon-ui-caret-left" />
-					                    </svg> 
+											<use xlink:href="#icon-ui-caret-left" />
+										</svg> 
 									</span>
 									
 								</div>
@@ -64,8 +64,8 @@
 										
 											<span class="icon feature-icon green-scheme">
 												<svg>
-							                        <use xlink:href="#icon-feature-cabinets" />
-							                    </svg> 
+													<use xlink:href="#icon-feature-cabinets" />
+												</svg> 
 											</span>
 
 											<h4>Eco-Friendy Cabinets</h4>
@@ -79,10 +79,10 @@
 												<span class="link-icon">
 
 													<svg>
-							                        	<use xlink:href="#icon-ui-plus" />
-							                    	</svg> 
+														<use xlink:href="#icon-ui-plus" />
+													</svg> 
 
-							                    </span>
+												</span>
 
 												<span class="link-text">
 
@@ -102,8 +102,8 @@
 										
 											<span class="icon feature-icon green-scheme">
 												<svg>
-							                        <use xlink:href="#icon-feature-cabinets" />
-							                    </svg> 
+													<use xlink:href="#icon-feature-cabinets" />
+												</svg> 
 											</span>
 
 											<h4>Eco-Friendy Cabinets</h4>
@@ -123,10 +123,10 @@
 												<span class="link-icon">
 
 													<svg>
-							                        	<use xlink:href="#icon-ui-caret-left" />
-							                    	</svg> 
+														<use xlink:href="#icon-ui-caret-left" />
+													</svg> 
 
-							                    </span>
+												</span>
 
 												<span class="link-text">
 
@@ -153,9 +153,9 @@
 										<div class="card-title">
 										
 											<span class="icon feature-icon magenta-scheme">
-											 	<svg>
-							                        <use xlink:href="#icon-feature-flooring" />
-							                    </svg>  
+												<svg>
+													<use xlink:href="#icon-feature-flooring" />
+												</svg>  
 											</span>
 
 											<h4>Eco-Friendy Flooring</h4>
@@ -169,10 +169,10 @@
 												<span class="link-icon">
 
 													<svg>
-							                        	<use xlink:href="#icon-ui-plus" />
-							                    	</svg> 
+														<use xlink:href="#icon-ui-plus" />
+													</svg> 
 
-							                    </span>
+												</span>
 
 												<span class="link-text">
 
@@ -191,9 +191,9 @@
 										<div class="card-title">
 										
 											<span class="icon feature-icon magenta-scheme">
-							                    <svg>
-							                        <use xlink:href="#icon-feature-flooring" />
-							                    </svg>  
+												<svg>
+													<use xlink:href="#icon-feature-flooring" />
+												</svg>  
 											</span>
 
 											<h4>Eco-Friendy Flooring</h4>
@@ -211,10 +211,10 @@
 												<span class="link-icon">
 
 													<svg>
-							                        	<use xlink:href="#icon-ui-caret-left" />
-							                    	</svg> 
+														<use xlink:href="#icon-ui-caret-left" />
+													</svg> 
 
-							                    </span>
+												</span>
 
 												<span class="link-text">
 
@@ -242,8 +242,8 @@
 										
 											<span class="icon feature-icon blue-scheme">
 												<svg>
-							                        <use xlink:href="#icon-feature-lighting" />
-							                    </svg> 
+													<use xlink:href="#icon-feature-lighting" />
+												</svg> 
 											</span>
 
 											<h4>Advanced Lighting Technology</h4>
@@ -257,10 +257,10 @@
 												<span class="link-icon">
 
 													<svg>
-							                        	<use xlink:href="#icon-ui-plus" />
-							                    	</svg> 
+														<use xlink:href="#icon-ui-plus" />
+													</svg> 
 
-							                    </span>
+												</span>
 
 												<span class="link-text">
 
@@ -280,8 +280,8 @@
 										
 											<span class="icon feature-icon blue-scheme">
 												<svg>
-							                        <use xlink:href="#icon-feature-lighting" />
-							                    </svg> 
+													<use xlink:href="#icon-feature-lighting" />
+												</svg> 
 											</span>
 
 											<h4>Advanced Lighting Technology</h4>
@@ -299,10 +299,10 @@
 												<span class="link-icon">
 
 													<svg>
-							                        	<use xlink:href="#icon-ui-caret-left" />
-							                    	</svg> 
+														<use xlink:href="#icon-ui-caret-left" />
+													</svg> 
 
-							                    </span>
+												</span>
 
 												<span class="link-text">
 
@@ -330,8 +330,8 @@
 										
 											<span class="icon feature-icon orange-scheme">
 												<svg>
-							                        <use xlink:href="#icon-feature-products" />
-							                    </svg> 
+													<use xlink:href="#icon-feature-products" />
+												</svg> 
 											</span>
 
 											<h4>Healthy Building Products</h4>
@@ -345,10 +345,10 @@
 												<span class="link-icon">
 
 													<svg>
-							                        	<use xlink:href="#icon-ui-plus" />
-							                    	</svg> 
+														<use xlink:href="#icon-ui-plus" />
+													</svg> 
 
-							                    </span>
+												</span>
 
 												<span class="link-text">
 
@@ -368,8 +368,8 @@
 										
 											<span class="icon feature-icon orange-scheme">
 												<svg>
-							                        <use xlink:href="#icon-feature-products" />
-							                    </svg> 
+													<use xlink:href="#icon-feature-products" />
+												</svg> 
 											</span>
 
 											<h4>Healthy Building Products</h4>
@@ -387,10 +387,10 @@
 												<span class="link-icon">
 
 													<svg>
-							                        	<use xlink:href="#icon-ui-caret-left" />
-							                    	</svg> 
+														<use xlink:href="#icon-ui-caret-left" />
+													</svg> 
 
-							                    </span>
+												</span>
 
 												<span class="link-text">
 
@@ -419,8 +419,8 @@
 											<span class="icon feature-icon purple-scheme">
 							
 												<svg>
-							                        <use xlink:href="#icon-feature-windows" />
-							                    </svg> 
+													<use xlink:href="#icon-feature-windows" />
+												</svg> 
 
 											</span>
 
@@ -435,10 +435,10 @@
 												<span class="link-icon">
 
 													<svg>
-							                        	<use xlink:href="#icon-ui-plus" />
-							                    	</svg> 
+														<use xlink:href="#icon-ui-plus" />
+													</svg> 
 
-							                    </span>
+												</span>
 
 												<span class="link-text">
 
@@ -458,8 +458,8 @@
 										
 											<span class="icon feature-icon magenta-scheme">
 												<svg>
-							                        <use xlink:href="#icon-feature-windows" />
-							                    </svg> 
+													<use xlink:href="#icon-feature-windows" />
+												</svg> 
 											</span>
 
 											<h4>High-Efficiency Windows</h4>
@@ -477,10 +477,10 @@
 												<span class="link-icon">
 
 													<svg>
-							                        	<use xlink:href="#icon-ui-caret-left" />
-							                    	</svg> 
+														<use xlink:href="#icon-ui-caret-left" />
+													</svg> 
 
-							                    </span>
+												</span>
 
 												<span class="link-text">
 
@@ -504,8 +504,8 @@
 
 									<span class="icon ui-icon">
 										<svg>
-					                        <use xlink:href="#icon-ui-caret-right" />
-					                    </svg> 
+											<use xlink:href="#icon-ui-caret-right" />
+										</svg> 
 									</span>
 									
 								</div>
